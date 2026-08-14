@@ -17,6 +17,13 @@ exports.renderHomePage = async (req, res) => {
   }
 };
 
+exports.renderAboutPage = (req, res) => {
+  res.render('about', {
+    path: req.path,
+    currentLang: req.language
+  });
+};
+
 exports.renderThanksPage = (req, res) => {
   res.render('thanks', {
     path: req.path,

@@ -1,5 +1,5 @@
 #!/bin/sh
-set -x
+set -e
 
-npm run scss &
-npm run start:dev
+npm run dev:node
+

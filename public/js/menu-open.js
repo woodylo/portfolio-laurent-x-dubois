@@ -23,9 +23,9 @@ itemWithDropdown.addEventListener('click', () => {
 const burgerButton = document.querySelector('.burger-button');
 
 function toggleMobileMenu() {
-    elementsToChangeOpen.map(element => {
+    elementsToChangeOpen.filter(Boolean).forEach(element => {
         element.classList.toggle('menu-open');
-    })
+    });
 };
 
 burgerButton.addEventListener('click', () => {
@@ -48,8 +48,8 @@ burgerButton.addEventListener('click', () => {
 
 // Close mobile menu on resize
 window.addEventListener('resize', () => {
-    const isMenuOpened = elementsToChangeOpen[0].classList.contains('menu-open');
-    if (window.innerWidth >= 992 & isMenuOpened) toggleMobileMenu();
-
+    const firstEl = elementsToChangeOpen.filter(Boolean)[0];
+    const isMenuOpened = firstEl ? firstEl.classList.contains('menu-open') : false;
+    if (window.innerWidth >= 992 && isMenuOpened) toggleMobileMenu();
 });
 

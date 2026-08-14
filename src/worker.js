@@ -64,6 +64,10 @@ app.get('/en', async (c) => {
   return renderView(c, 'gallery', galleryData);
 });
 
+// About routes
+app.get('/a-propos', (c) => renderView(c, 'about'));
+app.get('/en/about', (c) => renderView(c, 'about'));
+
 // Thanks routes
 app.get('/merci', (c) => renderView(c, 'thanks'));
 app.get('/en/thanks', (c) => renderView(c, 'thanks'));
@@ -118,18 +122,18 @@ const handleContactPost = async (c) => {
   const alertMsgPerInput = new Map();
 
   if (!formData.name) {
-    alertMsgPerInput.set('name', 'Name is required');
+    alertMsgPerInput.set('name', lang === 'fr' ? 'Le nom est requis' : 'Name is required');
   }
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!formData.email) {
-    alertMsgPerInput.set('email', 'Email is required');
+    alertMsgPerInput.set('email', lang === 'fr' ? "L'email est requis" : 'Email is required');
   } else if (!emailRegex.test(formData.email)) {
-    alertMsgPerInput.set('email', 'Invalid email address');
+    alertMsgPerInput.set('email', lang === 'fr' ? 'Veuillez entrer un email valide' : 'Please enter a valid email');
   }
 
   if (!formData.message) {
-    alertMsgPerInput.set('message', 'Message is required');
+    alertMsgPerInput.set('message', lang === 'fr' ? 'Le message est requis' : 'Message is required');
   }
 
   if (alertMsgPerInput.size > 0) {

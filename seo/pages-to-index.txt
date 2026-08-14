@@ -1,4 +1,5 @@
 home
+about
 fashionWeek1
 fashionWeek2
 portraits

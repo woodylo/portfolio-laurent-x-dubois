@@ -145,7 +145,7 @@ tmp/
 GEO-AUDIT-REPORT.md
 geo-audit-data.json
 GEO-REPORT*.pdf
-public/rsync_all_env.sh
+scripts/rsync_all_env.sh
 sitemap.xml
 public/sitemap.xml
 

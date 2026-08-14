@@ -29,7 +29,7 @@
         <%= locals.pageTitle || t('common.meta.defaultTitle') %>
     </title>
     <link
-        href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|
               Marcellus+SC|Lato:100,300,400,700|Quicksand:300,400|
               Source+Code+Pro:200,300,400|Open+Sans:400,300|Roboto:400,100,300"
         rel="stylesheet" type="text/css">
@@ -120,37 +120,68 @@
       <meta property="og:type" content="article">
     <% } %>
 
-    <!-- Schema.org for Google -->
+    <!-- Schema.org for Google & AI Engines -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "<%= locals.isArticle ? 'Article' : 'WebPage' %>",
-      "name": "<%= locals.pageTitle || t('common.meta.defaultTitle') %>",
-      "description": "<%= locals.pageDescription || t('common.meta.defaultDescription') %>",
-      "url": "https://portfolio.laurentxdubois.com<%= path %>",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://portfolio.laurentxdubois.com/img/laurent-profile.jpg",
-        "width": "1200",
-        "height": "630"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Laurent X. Dubois Photography",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://portfolio.laurentxdubois.com/img/laurent-profile.jpg"
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://portfolio.laurentxdubois.com/#business",
+          "name": "Laurent X. Dubois Photography",
+          "alternateName": "Laurent X. Dubois Photographe",
+          "url": "https://portfolio.laurentxdubois.com",
+          "image": "https://portfolio.laurentxdubois.com/img/laurent-profile.jpg",
+          "logo": "https://portfolio.laurentxdubois.com/img/laurent-profile.jpg",
+          "telephone": "+33612330964",
+          "email": "Hello@LaurentXDubois.com",
+          "priceRange": "€€€",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Paris",
+            "addressCountry": "FR"
+          },
+          "areaServed": ["Paris", "France", "International"],
+          "sameAs": [
+            "https://www.instagram.com/laurentxdubois/",
+            "https://www.youtube.com/channel/UCBKdjX7ZbqgZmNYWaU3izsw",
+            "https://www.facebook.com/LaurentXDubois.Photo",
+            "https://www.tiktok.com/@laurentxdubois"
+          ]
+        },
+        {
+          "@type": "<%= locals.isArticle ? 'Article' : 'WebPage' %>",
+          "@id": "https://portfolio.laurentxdubois.com<%= path %>#webpage",
+          "url": "https://portfolio.laurentxdubois.com<%= path %>",
+          "name": "<%= locals.pageTitle || t('common.meta.defaultTitle') %>",
+          "description": "<%= locals.pageDescription || t('common.meta.defaultDescription') %>",
+          "inLanguage": "<%= currentLang %>",
+          "isPartOf": {
+            "@id": "https://portfolio.laurentxdubois.com/#business"
+          },
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://portfolio.laurentxdubois.com/img/laurent-profile.jpg",
+            "width": "1200",
+            "height": "630"
+          }<% if (locals.isArticle) { %>,
+          "articleSection": "<%= locals.articleSection %>",
+          "keywords": "<%= locals.articleTags %>",
+          "datePublished": "<%= locals.publishDate %>",
+          "dateModified": "<%= locals.modifiedDate %>",
+          "author": {
+            "@type": "Person",
+            "name": "Laurent X. Dubois",
+            "sameAs": [
+              "https://www.instagram.com/laurentxdubois/",
+              "https://www.youtube.com/channel/UCBKdjX7ZbqgZmNYWaU3izsw",
+              "https://www.facebook.com/LaurentXDubois.Photo",
+              "https://www.tiktok.com/@laurentxdubois"
+            ]
+          }
+          <% } %>
         }
-      }<% if (locals.isArticle) { %>,
-      "articleSection": "<%= locals.articleSection %>",
-      "keywords": "<%= locals.articleTags %>",
-      "datePublished": "<%= locals.publishDate %>",
-      "dateModified": "<%= locals.modifiedDate %>",
-      "author": {
-        "@type": "Person",
-        "name": "Laurent X. Dubois"
-      }
-      <% } %>
+      ]
     }
     </script>
 

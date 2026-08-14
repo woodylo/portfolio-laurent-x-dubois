@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.about-container {
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 0.25rem;
+  max-width: 60rem;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+.about-container.menu-open {
+  display: none;
+}
+.about-container__text {
+  font-family: "PlayfairDisplay-Regular";
+  font-weight: 300;
+  font-size: 0.938rem;
+  text-align: left;
+  line-height: 1.6;
+  color: #222;
+}
+.about-container__profile-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .about-container__profile-col {
+    width: 22rem;
+  }
+}
+.about-container__profile-col .profile-img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border: 3px solid #e0e0e0;
+}
+.about-container__profile-col .profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+.about-container__profile-col .profile-actions .btn-cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #181818;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  transition: background-color 0.2s ease;
+  text-align: center;
+}
+.about-container__profile-col .profile-actions .btn-cta:hover {
+  background-color: #ca1414;
+}
+.about-container__profile-col .profile-actions .btn-secondary {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #aaa;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+.about-container__profile-col .profile-actions .btn-secondary:hover {
+  color: #ca1414;
+  border-color: #ca1414;
+}
+.about-container__content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .about-container__content-col {
+    width: 32rem;
+  }
+}
+.about-container__content-col h1 {
+  color: #991e58;
+  font-size: 1.75rem;
+  font-family: "PlayfairDisplay-Regular";
+  font-weight: 300;
+  font-variant: small-caps;
+  text-align: left;
+  letter-spacing: 0.188rem;
+  margin-bottom: 0.25rem;
+}
+.about-container__content-col h2 {
+  color: #777;
+  font-family: "PlayfairDisplay-Regular";
+  font-weight: 200;
+  font-size: 1rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1rem;
+  line-height: 1.4;
+}
+.about-container__content-col h3 {
+  color: #444;
+  font-family: "PlayfairDisplay-Regular";
+  font-weight: 400;
+  font-size: 1.1rem;
+  font-variant: small-caps;
+  letter-spacing: 0.08rem;
+  margin-top: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+.about-container__content-col .specialties-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.about-container__content-col .specialties-list li {
+  position: relative;
+  padding-left: 1.2rem;
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 0.9rem;
+  color: #333;
+}
+.about-container__content-col .specialties-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #991e58;
+  font-size: 1.2rem;
+  line-height: 1;
+}

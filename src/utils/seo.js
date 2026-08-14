@@ -7,6 +7,12 @@ const pageMetadata = {
                 'and portrait photographer based in Paris. Specializing in fashion ' +
                 'week, editorial, and commercial photography.'
         },
+        about: {
+            title: 'About Laurent X. Dubois | Fashion & Portrait Photographer in Paris',
+            description:
+                'Learn more about Laurent X. Dubois, Paris-based professional photographer ' +
+                'specializing in fashion week, executive portraits, and high-end editorial work.'
+        },
         contact: {
             title: 'Contact Laurent X. Dubois | Professional Photography Services',
             description:
@@ -34,6 +40,12 @@ const pageMetadata = {
                 'Découvrez le portfolio de Laurent X. Dubois, photographe professionnel ' +
                 'de mode et portrait basé à Paris. Spécialisé dans le corporate, la mode, ' +
                 'l\'éditorial et la photographie commerciale.'
+        },
+        about: {
+            title: 'À Propos de Laurent X. Dubois | Photographe Mode & Portrait à Paris',
+            description:
+                'Découvrez le parcours de Laurent X. Dubois, photographe professionnel à Paris ' +
+                'spécialisé dans la mode, les défilés Fashion Week, le portrait corporate et l\'éditorial.'
         },
         contact: {
             title: 'Contact Laurent X. Dubois | Services de Photographie Professionnelle',

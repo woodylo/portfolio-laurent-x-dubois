@@ -4,6 +4,7 @@
  */
 const navigationUrls = {
   home: { fr: '/', en: '/en' },
+  about: { fr: '/a-propos', en: '/en/about' },
   fashion: { fr: '/mode', en: '/en/fashion' },
   fashionWeek1: { fr: '/fashion-week-1', en: '/en/fashion-week-1' },
   fashionWeek2: { fr: '/fashion-week-2', en: '/en/fashion-week-2' },

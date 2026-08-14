@@ -252,6 +252,362 @@ t = __locals.t,
   return __output;
 
 },
+  "about.ejs": function anonymous(locals, escapeFn, include, rethrow
+) {
+escapeFn = escapeFn || function (markup) {
+  return markup == undefined
+    ? ''
+    : String(markup)
+      .replace(_MATCH_HTML, encode_char);
+};
+var _ENCODE_HTML_RULES = {
+      "&": "&amp;"
+    , "<": "&lt;"
+    , ">": "&gt;"
+    , '"': "&#34;"
+    , "'": "&#39;"
+    }
+  , _MATCH_HTML = /[&<>'"]/g;
+function encode_char(c) {
+  return _ENCODE_HTML_RULES[c] || c;
+};
+;
+  var __output = "";
+  function __append(s) { if (s !== undefined && s !== null) __output += s }
+  var __locals = (locals || {}),
+t = __locals.t,
+  path = __locals.path,
+  currentLang = __locals.currentLang,
+  languageUrls = __locals.languageUrls,
+  getPageUrl = __locals.getPageUrl,
+  pageTitle = __locals.pageTitle,
+  pageDescription = __locals.pageDescription,
+  seoUtils = __locals.seoUtils,
+  googleAnalyticsMeasurementId = __locals.googleAnalyticsMeasurementId,
+  clickyAnalyticsMeasurementId = __locals.clickyAnalyticsMeasurementId,
+  gtagMeasurementId = __locals.gtagMeasurementId,
+  otherCSSFile = __locals.otherCSSFile,
+  otherJSFile = __locals.otherJSFile,
+  isArticle = __locals.isArticle,
+  publishDate = __locals.publishDate,
+  modifiedDate = __locals.modifiedDate,
+  articleSection = __locals.articleSection,
+  articleTags = __locals.articleTags,
+  galleries = __locals.galleries,
+  alertMsgPerInput = __locals.alertMsgPerInput,
+  nameInput = __locals.nameInput,
+  emailInput = __locals.emailInput,
+  telephoneInput = __locals.telephoneInput,
+  websiteInput = __locals.websiteInput,
+  messageInput = __locals.messageInput,
+  galleryPath = __locals.galleryPath,
+  imageNames = __locals.imageNames,
+  videosFolderExists = __locals.videosFolderExists,
+  locals = __locals.locals;
+    ; __append( include('./partials/header', { otherCSSFile: "about", otherJSFile: "about" }) )
+    ; __append("\n<div class=\"about-container\">\n    <div class=\"about-container__profile-col\">\n        <img src=\"/img/laurent-profile.jpg\" alt=\"Laurent X. Dubois\" class=\"profile-img\">\n        <div class=\"profile-actions\">\n            <a href=\"")
+    ; __append(escapeFn( getPageUrl('contact') ))
+    ; __append("\" class=\"btn-cta\">\n                ")
+    ; __append(escapeFn( t('pages.about.cta') ))
+    ; __append("\n            </a>\n            <a href=\"/CV\" target=\"_blank\" class=\"btn-secondary\">\n                ")
+    ; __append(escapeFn( t('pages.about.downloadCV') ))
+    ; __append("\n            </a>\n        </div>\n    </div>\n    <div class=\"about-container__content-col\">\n        <h1>")
+    ; __append(escapeFn( t('pages.about.title') ))
+    ; __append("</h1>\n        <h2>")
+    ; __append(escapeFn( t('pages.about.subtitle') ))
+    ; __append("</h2>\n        \n        <p class=\"about-container__text\">\n            ")
+    ; __append(escapeFn( t('pages.about.intro') ))
+    ; __append("\n        </p>\n\n        <h3>")
+    ; __append(escapeFn( t('pages.about.bioTitle') ))
+    ; __append("</h3>\n        <p class=\"about-container__text\">\n            ")
+    ; __append(escapeFn( t('pages.about.bio') ))
+    ; __append("\n        </p>\n\n        <h3>")
+    ; __append(escapeFn( t('pages.about.specialtiesTitle') ))
+    ; __append("</h3>\n        <ul class=\"specialties-list\">\n            ")
+    ;  for (let i = 0; i < 5; i++) { 
+    ; __append("\n                ")
+    ;  const item = t('pages.about.specialties.' + i); 
+    ; __append("\n                ")
+    ;  if (item && item !== 'pages.about.specialties.' + i) { 
+    ; __append("\n                    <li>")
+    ; __append(escapeFn( item ))
+    ; __append("</li>\n                ")
+    ;  } 
+    ; __append("\n            ")
+    ;  } 
+    ; __append("\n        </ul>\n    </div>\n</div>\n")
+    ; __append( include('./partials/footer') )
+    ; __append("\n")
+  return __output;
+
+},
+  "about": function anonymous(locals, escapeFn, include, rethrow
+) {
+escapeFn = escapeFn || function (markup) {
+  return markup == undefined
+    ? ''
+    : String(markup)
+      .replace(_MATCH_HTML, encode_char);
+};
+var _ENCODE_HTML_RULES = {
+      "&": "&amp;"
+    , "<": "&lt;"
+    , ">": "&gt;"
+    , '"': "&#34;"
+    , "'": "&#39;"
+    }
+  , _MATCH_HTML = /[&<>'"]/g;
+function encode_char(c) {
+  return _ENCODE_HTML_RULES[c] || c;
+};
+;
+  var __output = "";
+  function __append(s) { if (s !== undefined && s !== null) __output += s }
+  var __locals = (locals || {}),
+t = __locals.t,
+  path = __locals.path,
+  currentLang = __locals.currentLang,
+  languageUrls = __locals.languageUrls,
+  getPageUrl = __locals.getPageUrl,
+  pageTitle = __locals.pageTitle,
+  pageDescription = __locals.pageDescription,
+  seoUtils = __locals.seoUtils,
+  googleAnalyticsMeasurementId = __locals.googleAnalyticsMeasurementId,
+  clickyAnalyticsMeasurementId = __locals.clickyAnalyticsMeasurementId,
+  gtagMeasurementId = __locals.gtagMeasurementId,
+  otherCSSFile = __locals.otherCSSFile,
+  otherJSFile = __locals.otherJSFile,
+  isArticle = __locals.isArticle,
+  publishDate = __locals.publishDate,
+  modifiedDate = __locals.modifiedDate,
+  articleSection = __locals.articleSection,
+  articleTags = __locals.articleTags,
+  galleries = __locals.galleries,
+  alertMsgPerInput = __locals.alertMsgPerInput,
+  nameInput = __locals.nameInput,
+  emailInput = __locals.emailInput,
+  telephoneInput = __locals.telephoneInput,
+  websiteInput = __locals.websiteInput,
+  messageInput = __locals.messageInput,
+  galleryPath = __locals.galleryPath,
+  imageNames = __locals.imageNames,
+  videosFolderExists = __locals.videosFolderExists,
+  locals = __locals.locals;
+    ; __append( include('./partials/header', { otherCSSFile: "about", otherJSFile: "about" }) )
+    ; __append("\n<div class=\"about-container\">\n    <div class=\"about-container__profile-col\">\n        <img src=\"/img/laurent-profile.jpg\" alt=\"Laurent X. Dubois\" class=\"profile-img\">\n        <div class=\"profile-actions\">\n            <a href=\"")
+    ; __append(escapeFn( getPageUrl('contact') ))
+    ; __append("\" class=\"btn-cta\">\n                ")
+    ; __append(escapeFn( t('pages.about.cta') ))
+    ; __append("\n            </a>\n            <a href=\"/CV\" target=\"_blank\" class=\"btn-secondary\">\n                ")
+    ; __append(escapeFn( t('pages.about.downloadCV') ))
+    ; __append("\n            </a>\n        </div>\n    </div>\n    <div class=\"about-container__content-col\">\n        <h1>")
+    ; __append(escapeFn( t('pages.about.title') ))
+    ; __append("</h1>\n        <h2>")
+    ; __append(escapeFn( t('pages.about.subtitle') ))
+    ; __append("</h2>\n        \n        <p class=\"about-container__text\">\n            ")
+    ; __append(escapeFn( t('pages.about.intro') ))
+    ; __append("\n        </p>\n\n        <h3>")
+    ; __append(escapeFn( t('pages.about.bioTitle') ))
+    ; __append("</h3>\n        <p class=\"about-container__text\">\n            ")
+    ; __append(escapeFn( t('pages.about.bio') ))
+    ; __append("\n        </p>\n\n        <h3>")
+    ; __append(escapeFn( t('pages.about.specialtiesTitle') ))
+    ; __append("</h3>\n        <ul class=\"specialties-list\">\n            ")
+    ;  for (let i = 0; i < 5; i++) { 
+    ; __append("\n                ")
+    ;  const item = t('pages.about.specialties.' + i); 
+    ; __append("\n                ")
+    ;  if (item && item !== 'pages.about.specialties.' + i) { 
+    ; __append("\n                    <li>")
+    ; __append(escapeFn( item ))
+    ; __append("</li>\n                ")
+    ;  } 
+    ; __append("\n            ")
+    ;  } 
+    ; __append("\n        </ul>\n    </div>\n</div>\n")
+    ; __append( include('./partials/footer') )
+    ; __append("\n")
+  return __output;
+
+},
+  "./about.ejs": function anonymous(locals, escapeFn, include, rethrow
+) {
+escapeFn = escapeFn || function (markup) {
+  return markup == undefined
+    ? ''
+    : String(markup)
+      .replace(_MATCH_HTML, encode_char);
+};
+var _ENCODE_HTML_RULES = {
+      "&": "&amp;"
+    , "<": "&lt;"
+    , ">": "&gt;"
+    , '"': "&#34;"
+    , "'": "&#39;"
+    }
+  , _MATCH_HTML = /[&<>'"]/g;
+function encode_char(c) {
+  return _ENCODE_HTML_RULES[c] || c;
+};
+;
+  var __output = "";
+  function __append(s) { if (s !== undefined && s !== null) __output += s }
+  var __locals = (locals || {}),
+t = __locals.t,
+  path = __locals.path,
+  currentLang = __locals.currentLang,
+  languageUrls = __locals.languageUrls,
+  getPageUrl = __locals.getPageUrl,
+  pageTitle = __locals.pageTitle,
+  pageDescription = __locals.pageDescription,
+  seoUtils = __locals.seoUtils,
+  googleAnalyticsMeasurementId = __locals.googleAnalyticsMeasurementId,
+  clickyAnalyticsMeasurementId = __locals.clickyAnalyticsMeasurementId,
+  gtagMeasurementId = __locals.gtagMeasurementId,
+  otherCSSFile = __locals.otherCSSFile,
+  otherJSFile = __locals.otherJSFile,
+  isArticle = __locals.isArticle,
+  publishDate = __locals.publishDate,
+  modifiedDate = __locals.modifiedDate,
+  articleSection = __locals.articleSection,
+  articleTags = __locals.articleTags,
+  galleries = __locals.galleries,
+  alertMsgPerInput = __locals.alertMsgPerInput,
+  nameInput = __locals.nameInput,
+  emailInput = __locals.emailInput,
+  telephoneInput = __locals.telephoneInput,
+  websiteInput = __locals.websiteInput,
+  messageInput = __locals.messageInput,
+  galleryPath = __locals.galleryPath,
+  imageNames = __locals.imageNames,
+  videosFolderExists = __locals.videosFolderExists,
+  locals = __locals.locals;
+    ; __append( include('./partials/header', { otherCSSFile: "about", otherJSFile: "about" }) )
+    ; __append("\n<div class=\"about-container\">\n    <div class=\"about-container__profile-col\">\n        <img src=\"/img/laurent-profile.jpg\" alt=\"Laurent X. Dubois\" class=\"profile-img\">\n        <div class=\"profile-actions\">\n            <a href=\"")
+    ; __append(escapeFn( getPageUrl('contact') ))
+    ; __append("\" class=\"btn-cta\">\n                ")
+    ; __append(escapeFn( t('pages.about.cta') ))
+    ; __append("\n            </a>\n            <a href=\"/CV\" target=\"_blank\" class=\"btn-secondary\">\n                ")
+    ; __append(escapeFn( t('pages.about.downloadCV') ))
+    ; __append("\n            </a>\n        </div>\n    </div>\n    <div class=\"about-container__content-col\">\n        <h1>")
+    ; __append(escapeFn( t('pages.about.title') ))
+    ; __append("</h1>\n        <h2>")
+    ; __append(escapeFn( t('pages.about.subtitle') ))
+    ; __append("</h2>\n        \n        <p class=\"about-container__text\">\n            ")
+    ; __append(escapeFn( t('pages.about.intro') ))
+    ; __append("\n        </p>\n\n        <h3>")
+    ; __append(escapeFn( t('pages.about.bioTitle') ))
+    ; __append("</h3>\n        <p class=\"about-container__text\">\n            ")
+    ; __append(escapeFn( t('pages.about.bio') ))
+    ; __append("\n        </p>\n\n        <h3>")
+    ; __append(escapeFn( t('pages.about.specialtiesTitle') ))
+    ; __append("</h3>\n        <ul class=\"specialties-list\">\n            ")
+    ;  for (let i = 0; i < 5; i++) { 
+    ; __append("\n                ")
+    ;  const item = t('pages.about.specialties.' + i); 
+    ; __append("\n                ")
+    ;  if (item && item !== 'pages.about.specialties.' + i) { 
+    ; __append("\n                    <li>")
+    ; __append(escapeFn( item ))
+    ; __append("</li>\n                ")
+    ;  } 
+    ; __append("\n            ")
+    ;  } 
+    ; __append("\n        </ul>\n    </div>\n</div>\n")
+    ; __append( include('./partials/footer') )
+    ; __append("\n")
+  return __output;
+
+},
+  "./about": function anonymous(locals, escapeFn, include, rethrow
+) {
+escapeFn = escapeFn || function (markup) {
+  return markup == undefined
+    ? ''
+    : String(markup)
+      .replace(_MATCH_HTML, encode_char);
+};
+var _ENCODE_HTML_RULES = {
+      "&": "&amp;"
+    , "<": "&lt;"
+    , ">": "&gt;"
+    , '"': "&#34;"
+    , "'": "&#39;"
+    }
+  , _MATCH_HTML = /[&<>'"]/g;
+function encode_char(c) {
+  return _ENCODE_HTML_RULES[c] || c;
+};
+;
+  var __output = "";
+  function __append(s) { if (s !== undefined && s !== null) __output += s }
+  var __locals = (locals || {}),
+t = __locals.t,
+  path = __locals.path,
+  currentLang = __locals.currentLang,
+  languageUrls = __locals.languageUrls,
+  getPageUrl = __locals.getPageUrl,
+  pageTitle = __locals.pageTitle,
+  pageDescription = __locals.pageDescription,
+  seoUtils = __locals.seoUtils,
+  googleAnalyticsMeasurementId = __locals.googleAnalyticsMeasurementId,
+  clickyAnalyticsMeasurementId = __locals.clickyAnalyticsMeasurementId,
+  gtagMeasurementId = __locals.gtagMeasurementId,
+  otherCSSFile = __locals.otherCSSFile,
+  otherJSFile = __locals.otherJSFile,
+  isArticle = __locals.isArticle,
+  publishDate = __locals.publishDate,
+  modifiedDate = __locals.modifiedDate,
+  articleSection = __locals.articleSection,
+  articleTags = __locals.articleTags,
+  galleries = __locals.galleries,
+  alertMsgPerInput = __locals.alertMsgPerInput,
+  nameInput = __locals.nameInput,
+  emailInput = __locals.emailInput,
+  telephoneInput = __locals.telephoneInput,
+  websiteInput = __locals.websiteInput,
+  messageInput = __locals.messageInput,
+  galleryPath = __locals.galleryPath,
+  imageNames = __locals.imageNames,
+  videosFolderExists = __locals.videosFolderExists,
+  locals = __locals.locals;
+    ; __append( include('./partials/header', { otherCSSFile: "about", otherJSFile: "about" }) )
+    ; __append("\n<div class=\"about-container\">\n    <div class=\"about-container__profile-col\">\n        <img src=\"/img/laurent-profile.jpg\" alt=\"Laurent X. Dubois\" class=\"profile-img\">\n        <div class=\"profile-actions\">\n            <a href=\"")
+    ; __append(escapeFn( getPageUrl('contact') ))
+    ; __append("\" class=\"btn-cta\">\n                ")
+    ; __append(escapeFn( t('pages.about.cta') ))
+    ; __append("\n            </a>\n            <a href=\"/CV\" target=\"_blank\" class=\"btn-secondary\">\n                ")
+    ; __append(escapeFn( t('pages.about.downloadCV') ))
+    ; __append("\n            </a>\n        </div>\n    </div>\n    <div class=\"about-container__content-col\">\n        <h1>")
+    ; __append(escapeFn( t('pages.about.title') ))
+    ; __append("</h1>\n        <h2>")
+    ; __append(escapeFn( t('pages.about.subtitle') ))
+    ; __append("</h2>\n        \n        <p class=\"about-container__text\">\n            ")
+    ; __append(escapeFn( t('pages.about.intro') ))
+    ; __append("\n        </p>\n\n        <h3>")
+    ; __append(escapeFn( t('pages.about.bioTitle') ))
+    ; __append("</h3>\n        <p class=\"about-container__text\">\n            ")
+    ; __append(escapeFn( t('pages.about.bio') ))
+    ; __append("\n        </p>\n\n        <h3>")
+    ; __append(escapeFn( t('pages.about.specialtiesTitle') ))
+    ; __append("</h3>\n        <ul class=\"specialties-list\">\n            ")
+    ;  for (let i = 0; i < 5; i++) { 
+    ; __append("\n                ")
+    ;  const item = t('pages.about.specialties.' + i); 
+    ; __append("\n                ")
+    ;  if (item && item !== 'pages.about.specialties.' + i) { 
+    ; __append("\n                    <li>")
+    ; __append(escapeFn( item ))
+    ; __append("</li>\n                ")
+    ;  } 
+    ; __append("\n            ")
+    ;  } 
+    ; __append("\n        </ul>\n    </div>\n</div>\n")
+    ; __append( include('./partials/footer') )
+    ; __append("\n")
+  return __output;
+
+},
   "all-galleries.ejs": function anonymous(locals, escapeFn, include, rethrow
 ) {
 escapeFn = escapeFn || function (markup) {
@@ -1249,7 +1605,9 @@ t = __locals.t,
     ; __append(escapeFn( galleryPath ))
     ; __append("/images/")
     ; __append(escapeFn( imageNames[imageIndex] ))
-    ; __append("\"\n            alt=\"")
+    ; __append("\"\n            loading=\"")
+    ; __append(escapeFn( imageIndex < 2 ? 'eager' : 'lazy' ))
+    ; __append("\"\n            decoding=\"async\"\n            alt=\"")
     ; __append(escapeFn( seoUtils.enrichAltFromGalleryContext(
                 seoUtils.generateAltFromFilename(imageNames[imageIndex]),
                 galleryPath
@@ -1331,7 +1689,9 @@ t = __locals.t,
     ; __append(escapeFn( galleryPath ))
     ; __append("/images/")
     ; __append(escapeFn( imageNames[imageIndex] ))
-    ; __append("\"\n            alt=\"")
+    ; __append("\"\n            loading=\"")
+    ; __append(escapeFn( imageIndex < 2 ? 'eager' : 'lazy' ))
+    ; __append("\"\n            decoding=\"async\"\n            alt=\"")
     ; __append(escapeFn( seoUtils.enrichAltFromGalleryContext(
                 seoUtils.generateAltFromFilename(imageNames[imageIndex]),
                 galleryPath
@@ -1413,7 +1773,9 @@ t = __locals.t,
     ; __append(escapeFn( galleryPath ))
     ; __append("/images/")
     ; __append(escapeFn( imageNames[imageIndex] ))
-    ; __append("\"\n            alt=\"")
+    ; __append("\"\n            loading=\"")
+    ; __append(escapeFn( imageIndex < 2 ? 'eager' : 'lazy' ))
+    ; __append("\"\n            decoding=\"async\"\n            alt=\"")
     ; __append(escapeFn( seoUtils.enrichAltFromGalleryContext(
                 seoUtils.generateAltFromFilename(imageNames[imageIndex]),
                 galleryPath
@@ -1495,7 +1857,9 @@ t = __locals.t,
     ; __append(escapeFn( galleryPath ))
     ; __append("/images/")
     ; __append(escapeFn( imageNames[imageIndex] ))
-    ; __append("\"\n            alt=\"")
+    ; __append("\"\n            loading=\"")
+    ; __append(escapeFn( imageIndex < 2 ? 'eager' : 'lazy' ))
+    ; __append("\"\n            decoding=\"async\"\n            alt=\"")
     ; __append(escapeFn( seoUtils.enrichAltFromGalleryContext(
                 seoUtils.generateAltFromFilename(imageNames[imageIndex]),
                 galleryPath
@@ -1876,7 +2240,7 @@ t = __locals.t,
     ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
     ; __append("\" />\n    <title>\n        ")
     ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
-    ; __append("\n    </title>\n    <link\n        href=\"http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|\n              Marcellus+SC|Lato:100,300,400,700|Quicksand:300,400|\n              Source+Code+Pro:200,300,400|Open+Sans:400,300|Roboto:400,100,300\"\n        rel=\"stylesheet\" type=\"text/css\">\n    <link rel=\"stylesheet\" href=\"/css/main.css\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/img/apple-touch-icon.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/img/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/img/favicon-16x16.png\">\n    <link rel=\"manifest\" href=\"/img/site.webmanifest\">\n\n    <script type=\"module\" src=\"/js/header.js\" defer></script>\n    <script type=\"module\" src=\"/js/menu-open.js\" defer></script>\n    ")
+    ; __append("\n    </title>\n    <link\n        href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|\n              Marcellus+SC|Lato:100,300,400,700|Quicksand:300,400|\n              Source+Code+Pro:200,300,400|Open+Sans:400,300|Roboto:400,100,300\"\n        rel=\"stylesheet\" type=\"text/css\">\n    <link rel=\"stylesheet\" href=\"/css/main.css\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/img/apple-touch-icon.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/img/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/img/favicon-16x16.png\">\n    <link rel=\"manifest\" href=\"/img/site.webmanifest\">\n\n    <script type=\"module\" src=\"/js/header.js\" defer></script>\n    <script type=\"module\" src=\"/js/menu-open.js\" defer></script>\n    ")
     ;  if (locals.otherCSSFile) { 
     ; __append("\n        <link rel=\"stylesheet\" href=\"/css/")
     ; __append(escapeFn( otherCSSFile ))
@@ -1922,27 +2286,31 @@ t = __locals.t,
     ; __append(escapeFn( locals.articleTags ))
     ; __append("\">\n      \n      <!-- Override le type pour les articles -->\n      <meta property=\"og:type\" content=\"article\">\n    ")
     ;  } 
-    ; __append("\n\n    <!-- Schema.org for Google -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"")
+    ; __append("\n\n    <!-- Schema.org for Google & AI Engines -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@graph\": [\n        {\n          \"@type\": \"ProfessionalService\",\n          \"@id\": \"https://portfolio.laurentxdubois.com/#business\",\n          \"name\": \"Laurent X. Dubois Photography\",\n          \"alternateName\": \"Laurent X. Dubois Photographe\",\n          \"url\": \"https://portfolio.laurentxdubois.com\",\n          \"image\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n          \"logo\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n          \"telephone\": \"+33612330964\",\n          \"email\": \"Hello@LaurentXDubois.com\",\n          \"priceRange\": \"€€€\",\n          \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"Paris\",\n            \"addressCountry\": \"FR\"\n          },\n          \"areaServed\": [\"Paris\", \"France\", \"International\"],\n          \"sameAs\": [\n            \"https://www.instagram.com/laurentxdubois/\",\n            \"https://www.youtube.com/channel/UCBKdjX7ZbqgZmNYWaU3izsw\",\n            \"https://www.facebook.com/LaurentXDubois.Photo\",\n            \"https://www.tiktok.com/@laurentxdubois\"\n          ]\n        },\n        {\n          \"@type\": \"")
     ; __append(escapeFn( locals.isArticle ? 'Article' : 'WebPage' ))
-    ; __append("\",\n      \"name\": \"")
-    ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
-    ; __append("\",\n      \"description\": \"")
-    ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
-    ; __append("\",\n      \"url\": \"https://portfolio.laurentxdubois.com")
+    ; __append("\",\n          \"@id\": \"https://portfolio.laurentxdubois.com")
     ; __append(escapeFn( path ))
-    ; __append("\",\n      \"image\": {\n        \"@type\": \"ImageObject\",\n        \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n        \"width\": \"1200\",\n        \"height\": \"630\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Laurent X. Dubois Photography\",\n        \"logo\": {\n          \"@type\": \"ImageObject\",\n          \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\"\n        }\n      }")
+    ; __append("#webpage\",\n          \"url\": \"https://portfolio.laurentxdubois.com")
+    ; __append(escapeFn( path ))
+    ; __append("\",\n          \"name\": \"")
+    ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
+    ; __append("\",\n          \"description\": \"")
+    ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
+    ; __append("\",\n          \"inLanguage\": \"")
+    ; __append(escapeFn( currentLang ))
+    ; __append("\",\n          \"isPartOf\": {\n            \"@id\": \"https://portfolio.laurentxdubois.com/#business\"\n          },\n          \"image\": {\n            \"@type\": \"ImageObject\",\n            \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n            \"width\": \"1200\",\n            \"height\": \"630\"\n          }")
     ;  if (locals.isArticle) { 
-    ; __append(",\n      \"articleSection\": \"")
+    ; __append(",\n          \"articleSection\": \"")
     ; __append(escapeFn( locals.articleSection ))
-    ; __append("\",\n      \"keywords\": \"")
+    ; __append("\",\n          \"keywords\": \"")
     ; __append(escapeFn( locals.articleTags ))
-    ; __append("\",\n      \"datePublished\": \"")
+    ; __append("\",\n          \"datePublished\": \"")
     ; __append(escapeFn( locals.publishDate ))
-    ; __append("\",\n      \"dateModified\": \"")
+    ; __append("\",\n          \"dateModified\": \"")
     ; __append(escapeFn( locals.modifiedDate ))
-    ; __append("\",\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Laurent X. Dubois\"\n      }\n      ")
+    ; __append("\",\n          \"author\": {\n            \"@type\": \"Person\",\n            \"name\": \"Laurent X. Dubois\",\n            \"sameAs\": [\n              \"https://www.instagram.com/laurentxdubois/\",\n              \"https://www.youtube.com/channel/UCBKdjX7ZbqgZmNYWaU3izsw\",\n              \"https://www.facebook.com/LaurentXDubois.Photo\",\n              \"https://www.tiktok.com/@laurentxdubois\"\n            ]\n          }\n          ")
     ;  } 
-    ; __append("\n    }\n    </script>\n\n</head>\n\n<body>\n    <header class=\"header\">\n        <div class=\"burger-button\">\n            <div class=\"burger\"></div>\n        </div>\n        <ul class=\"menu-nav\">\n            <li class=\"menu-nav__item menu-nav__item-with-dropdown\">\n                <a href=\"#\" onclick=\"return false;\" class=\"menu-nav__link\">\n                    ")
+    ; __append("\n        }\n      ]\n    }\n    </script>\n\n</head>\n\n<body>\n    <header class=\"header\">\n        <div class=\"burger-button\">\n            <div class=\"burger\"></div>\n        </div>\n        <ul class=\"menu-nav\">\n            <li class=\"menu-nav__item menu-nav__item-with-dropdown\">\n                <a href=\"#\" onclick=\"return false;\" class=\"menu-nav__link\">\n                    ")
     ; __append(escapeFn( t('components.navigation.menu.fashion.title') ))
     ; __append("\n                </a>\n                <ul class=\"menu-nav__dropdown-menu\">\n                    <li class=\"menu-nav__dropdown-item\">\n                        <a href=\"")
     ; __append(escapeFn( getPageUrl('fashionWeek1') ))
@@ -2066,7 +2434,7 @@ t = __locals.t,
     ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
     ; __append("\" />\n    <title>\n        ")
     ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
-    ; __append("\n    </title>\n    <link\n        href=\"http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|\n              Marcellus+SC|Lato:100,300,400,700|Quicksand:300,400|\n              Source+Code+Pro:200,300,400|Open+Sans:400,300|Roboto:400,100,300\"\n        rel=\"stylesheet\" type=\"text/css\">\n    <link rel=\"stylesheet\" href=\"/css/main.css\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/img/apple-touch-icon.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/img/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/img/favicon-16x16.png\">\n    <link rel=\"manifest\" href=\"/img/site.webmanifest\">\n\n    <script type=\"module\" src=\"/js/header.js\" defer></script>\n    <script type=\"module\" src=\"/js/menu-open.js\" defer></script>\n    ")
+    ; __append("\n    </title>\n    <link\n        href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|\n              Marcellus+SC|Lato:100,300,400,700|Quicksand:300,400|\n              Source+Code+Pro:200,300,400|Open+Sans:400,300|Roboto:400,100,300\"\n        rel=\"stylesheet\" type=\"text/css\">\n    <link rel=\"stylesheet\" href=\"/css/main.css\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/img/apple-touch-icon.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/img/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/img/favicon-16x16.png\">\n    <link rel=\"manifest\" href=\"/img/site.webmanifest\">\n\n    <script type=\"module\" src=\"/js/header.js\" defer></script>\n    <script type=\"module\" src=\"/js/menu-open.js\" defer></script>\n    ")
     ;  if (locals.otherCSSFile) { 
     ; __append("\n        <link rel=\"stylesheet\" href=\"/css/")
     ; __append(escapeFn( otherCSSFile ))
@@ -2112,27 +2480,31 @@ t = __locals.t,
     ; __append(escapeFn( locals.articleTags ))
     ; __append("\">\n      \n      <!-- Override le type pour les articles -->\n      <meta property=\"og:type\" content=\"article\">\n    ")
     ;  } 
-    ; __append("\n\n    <!-- Schema.org for Google -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"")
+    ; __append("\n\n    <!-- Schema.org for Google & AI Engines -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@graph\": [\n        {\n          \"@type\": \"ProfessionalService\",\n          \"@id\": \"https://portfolio.laurentxdubois.com/#business\",\n          \"name\": \"Laurent X. Dubois Photography\",\n          \"alternateName\": \"Laurent X. Dubois Photographe\",\n          \"url\": \"https://portfolio.laurentxdubois.com\",\n          \"image\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n          \"logo\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n          \"telephone\": \"+33612330964\",\n          \"email\": \"Hello@LaurentXDubois.com\",\n          \"priceRange\": \"€€€\",\n          \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"Paris\",\n            \"addressCountry\": \"FR\"\n          },\n          \"areaServed\": [\"Paris\", \"France\", \"International\"],\n          \"sameAs\": [\n            \"https://www.instagram.com/laurentxdubois/\",\n            \"https://www.youtube.com/channel/UCBKdjX7ZbqgZmNYWaU3izsw\",\n            \"https://www.facebook.com/LaurentXDubois.Photo\",\n            \"https://www.tiktok.com/@laurentxdubois\"\n          ]\n        },\n        {\n          \"@type\": \"")
     ; __append(escapeFn( locals.isArticle ? 'Article' : 'WebPage' ))
-    ; __append("\",\n      \"name\": \"")
-    ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
-    ; __append("\",\n      \"description\": \"")
-    ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
-    ; __append("\",\n      \"url\": \"https://portfolio.laurentxdubois.com")
+    ; __append("\",\n          \"@id\": \"https://portfolio.laurentxdubois.com")
     ; __append(escapeFn( path ))
-    ; __append("\",\n      \"image\": {\n        \"@type\": \"ImageObject\",\n        \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n        \"width\": \"1200\",\n        \"height\": \"630\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Laurent X. Dubois Photography\",\n        \"logo\": {\n          \"@type\": \"ImageObject\",\n          \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\"\n        }\n      }")
+    ; __append("#webpage\",\n          \"url\": \"https://portfolio.laurentxdubois.com")
+    ; __append(escapeFn( path ))
+    ; __append("\",\n          \"name\": \"")
+    ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
+    ; __append("\",\n          \"description\": \"")
+    ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
+    ; __append("\",\n          \"inLanguage\": \"")
+    ; __append(escapeFn( currentLang ))
+    ; __append("\",\n          \"isPartOf\": {\n            \"@id\": \"https://portfolio.laurentxdubois.com/#business\"\n          },\n          \"image\": {\n            \"@type\": \"ImageObject\",\n            \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n            \"width\": \"1200\",\n            \"height\": \"630\"\n          }")
     ;  if (locals.isArticle) { 
-    ; __append(",\n      \"articleSection\": \"")
+    ; __append(",\n          \"articleSection\": \"")
     ; __append(escapeFn( locals.articleSection ))
-    ; __append("\",\n      \"keywords\": \"")
+    ; __append("\",\n          \"keywords\": \"")
     ; __append(escapeFn( locals.articleTags ))
-    ; __append("\",\n      \"datePublished\": \"")
+    ; __append("\",\n          \"datePublished\": \"")
     ; __append(escapeFn( locals.publishDate ))
-    ; __append("\",\n      \"dateModified\": \"")
+    ; __append("\",\n          \"dateModified\": \"")
     ; __append(escapeFn( locals.modifiedDate ))
-    ; __append("\",\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Laurent X. Dubois\"\n      }\n      ")
+    ; __append("\",\n          \"author\": {\n            \"@type\": \"Person\",\n            \"name\": \"Laurent X. Dubois\",\n            \"sameAs\": [\n              \"https://www.instagram.com/laurentxdubois/\",\n              \"https://www.youtube.com/channel/UCBKdjX7ZbqgZmNYWaU3izsw\",\n              \"https://www.facebook.com/LaurentXDubois.Photo\",\n              \"https://www.tiktok.com/@laurentxdubois\"\n            ]\n          }\n          ")
     ;  } 
-    ; __append("\n    }\n    </script>\n\n</head>\n\n<body>\n    <header class=\"header\">\n        <div class=\"burger-button\">\n            <div class=\"burger\"></div>\n        </div>\n        <ul class=\"menu-nav\">\n            <li class=\"menu-nav__item menu-nav__item-with-dropdown\">\n                <a href=\"#\" onclick=\"return false;\" class=\"menu-nav__link\">\n                    ")
+    ; __append("\n        }\n      ]\n    }\n    </script>\n\n</head>\n\n<body>\n    <header class=\"header\">\n        <div class=\"burger-button\">\n            <div class=\"burger\"></div>\n        </div>\n        <ul class=\"menu-nav\">\n            <li class=\"menu-nav__item menu-nav__item-with-dropdown\">\n                <a href=\"#\" onclick=\"return false;\" class=\"menu-nav__link\">\n                    ")
     ; __append(escapeFn( t('components.navigation.menu.fashion.title') ))
     ; __append("\n                </a>\n                <ul class=\"menu-nav__dropdown-menu\">\n                    <li class=\"menu-nav__dropdown-item\">\n                        <a href=\"")
     ; __append(escapeFn( getPageUrl('fashionWeek1') ))
@@ -2256,7 +2628,7 @@ t = __locals.t,
     ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
     ; __append("\" />\n    <title>\n        ")
     ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
-    ; __append("\n    </title>\n    <link\n        href=\"http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|\n              Marcellus+SC|Lato:100,300,400,700|Quicksand:300,400|\n              Source+Code+Pro:200,300,400|Open+Sans:400,300|Roboto:400,100,300\"\n        rel=\"stylesheet\" type=\"text/css\">\n    <link rel=\"stylesheet\" href=\"/css/main.css\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/img/apple-touch-icon.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/img/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/img/favicon-16x16.png\">\n    <link rel=\"manifest\" href=\"/img/site.webmanifest\">\n\n    <script type=\"module\" src=\"/js/header.js\" defer></script>\n    <script type=\"module\" src=\"/js/menu-open.js\" defer></script>\n    ")
+    ; __append("\n    </title>\n    <link\n        href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|\n              Marcellus+SC|Lato:100,300,400,700|Quicksand:300,400|\n              Source+Code+Pro:200,300,400|Open+Sans:400,300|Roboto:400,100,300\"\n        rel=\"stylesheet\" type=\"text/css\">\n    <link rel=\"stylesheet\" href=\"/css/main.css\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/img/apple-touch-icon.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/img/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/img/favicon-16x16.png\">\n    <link rel=\"manifest\" href=\"/img/site.webmanifest\">\n\n    <script type=\"module\" src=\"/js/header.js\" defer></script>\n    <script type=\"module\" src=\"/js/menu-open.js\" defer></script>\n    ")
     ;  if (locals.otherCSSFile) { 
     ; __append("\n        <link rel=\"stylesheet\" href=\"/css/")
     ; __append(escapeFn( otherCSSFile ))
@@ -2302,27 +2674,31 @@ t = __locals.t,
     ; __append(escapeFn( locals.articleTags ))
     ; __append("\">\n      \n      <!-- Override le type pour les articles -->\n      <meta property=\"og:type\" content=\"article\">\n    ")
     ;  } 
-    ; __append("\n\n    <!-- Schema.org for Google -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"")
+    ; __append("\n\n    <!-- Schema.org for Google & AI Engines -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@graph\": [\n        {\n          \"@type\": \"ProfessionalService\",\n          \"@id\": \"https://portfolio.laurentxdubois.com/#business\",\n          \"name\": \"Laurent X. Dubois Photography\",\n          \"alternateName\": \"Laurent X. Dubois Photographe\",\n          \"url\": \"https://portfolio.laurentxdubois.com\",\n          \"image\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n          \"logo\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n          \"telephone\": \"+33612330964\",\n          \"email\": \"Hello@LaurentXDubois.com\",\n          \"priceRange\": \"€€€\",\n          \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"Paris\",\n            \"addressCountry\": \"FR\"\n          },\n          \"areaServed\": [\"Paris\", \"France\", \"International\"],\n          \"sameAs\": [\n            \"https://www.instagram.com/laurentxdubois/\",\n            \"https://www.youtube.com/channel/UCBKdjX7ZbqgZmNYWaU3izsw\",\n            \"https://www.facebook.com/LaurentXDubois.Photo\",\n            \"https://www.tiktok.com/@laurentxdubois\"\n          ]\n        },\n        {\n          \"@type\": \"")
     ; __append(escapeFn( locals.isArticle ? 'Article' : 'WebPage' ))
-    ; __append("\",\n      \"name\": \"")
-    ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
-    ; __append("\",\n      \"description\": \"")
-    ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
-    ; __append("\",\n      \"url\": \"https://portfolio.laurentxdubois.com")
+    ; __append("\",\n          \"@id\": \"https://portfolio.laurentxdubois.com")
     ; __append(escapeFn( path ))
-    ; __append("\",\n      \"image\": {\n        \"@type\": \"ImageObject\",\n        \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n        \"width\": \"1200\",\n        \"height\": \"630\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Laurent X. Dubois Photography\",\n        \"logo\": {\n          \"@type\": \"ImageObject\",\n          \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\"\n        }\n      }")
+    ; __append("#webpage\",\n          \"url\": \"https://portfolio.laurentxdubois.com")
+    ; __append(escapeFn( path ))
+    ; __append("\",\n          \"name\": \"")
+    ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
+    ; __append("\",\n          \"description\": \"")
+    ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
+    ; __append("\",\n          \"inLanguage\": \"")
+    ; __append(escapeFn( currentLang ))
+    ; __append("\",\n          \"isPartOf\": {\n            \"@id\": \"https://portfolio.laurentxdubois.com/#business\"\n          },\n          \"image\": {\n            \"@type\": \"ImageObject\",\n            \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n            \"width\": \"1200\",\n            \"height\": \"630\"\n          }")
     ;  if (locals.isArticle) { 
-    ; __append(",\n      \"articleSection\": \"")
+    ; __append(",\n          \"articleSection\": \"")
     ; __append(escapeFn( locals.articleSection ))
-    ; __append("\",\n      \"keywords\": \"")
+    ; __append("\",\n          \"keywords\": \"")
     ; __append(escapeFn( locals.articleTags ))
-    ; __append("\",\n      \"datePublished\": \"")
+    ; __append("\",\n          \"datePublished\": \"")
     ; __append(escapeFn( locals.publishDate ))
-    ; __append("\",\n      \"dateModified\": \"")
+    ; __append("\",\n          \"dateModified\": \"")
     ; __append(escapeFn( locals.modifiedDate ))
-    ; __append("\",\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Laurent X. Dubois\"\n      }\n      ")
+    ; __append("\",\n          \"author\": {\n            \"@type\": \"Person\",\n            \"name\": \"Laurent X. Dubois\",\n            \"sameAs\": [\n              \"https://www.instagram.com/laurentxdubois/\",\n              \"https://www.youtube.com/channel/UCBKdjX7ZbqgZmNYWaU3izsw\",\n              \"https://www.facebook.com/LaurentXDubois.Photo\",\n              \"https://www.tiktok.com/@laurentxdubois\"\n            ]\n          }\n          ")
     ;  } 
-    ; __append("\n    }\n    </script>\n\n</head>\n\n<body>\n    <header class=\"header\">\n        <div class=\"burger-button\">\n            <div class=\"burger\"></div>\n        </div>\n        <ul class=\"menu-nav\">\n            <li class=\"menu-nav__item menu-nav__item-with-dropdown\">\n                <a href=\"#\" onclick=\"return false;\" class=\"menu-nav__link\">\n                    ")
+    ; __append("\n        }\n      ]\n    }\n    </script>\n\n</head>\n\n<body>\n    <header class=\"header\">\n        <div class=\"burger-button\">\n            <div class=\"burger\"></div>\n        </div>\n        <ul class=\"menu-nav\">\n            <li class=\"menu-nav__item menu-nav__item-with-dropdown\">\n                <a href=\"#\" onclick=\"return false;\" class=\"menu-nav__link\">\n                    ")
     ; __append(escapeFn( t('components.navigation.menu.fashion.title') ))
     ; __append("\n                </a>\n                <ul class=\"menu-nav__dropdown-menu\">\n                    <li class=\"menu-nav__dropdown-item\">\n                        <a href=\"")
     ; __append(escapeFn( getPageUrl('fashionWeek1') ))
@@ -2446,7 +2822,7 @@ t = __locals.t,
     ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
     ; __append("\" />\n    <title>\n        ")
     ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
-    ; __append("\n    </title>\n    <link\n        href=\"http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|\n              Marcellus+SC|Lato:100,300,400,700|Quicksand:300,400|\n              Source+Code+Pro:200,300,400|Open+Sans:400,300|Roboto:400,100,300\"\n        rel=\"stylesheet\" type=\"text/css\">\n    <link rel=\"stylesheet\" href=\"/css/main.css\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/img/apple-touch-icon.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/img/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/img/favicon-16x16.png\">\n    <link rel=\"manifest\" href=\"/img/site.webmanifest\">\n\n    <script type=\"module\" src=\"/js/header.js\" defer></script>\n    <script type=\"module\" src=\"/js/menu-open.js\" defer></script>\n    ")
+    ; __append("\n    </title>\n    <link\n        href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|\n              Marcellus+SC|Lato:100,300,400,700|Quicksand:300,400|\n              Source+Code+Pro:200,300,400|Open+Sans:400,300|Roboto:400,100,300\"\n        rel=\"stylesheet\" type=\"text/css\">\n    <link rel=\"stylesheet\" href=\"/css/main.css\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/img/apple-touch-icon.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/img/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/img/favicon-16x16.png\">\n    <link rel=\"manifest\" href=\"/img/site.webmanifest\">\n\n    <script type=\"module\" src=\"/js/header.js\" defer></script>\n    <script type=\"module\" src=\"/js/menu-open.js\" defer></script>\n    ")
     ;  if (locals.otherCSSFile) { 
     ; __append("\n        <link rel=\"stylesheet\" href=\"/css/")
     ; __append(escapeFn( otherCSSFile ))
@@ -2492,27 +2868,31 @@ t = __locals.t,
     ; __append(escapeFn( locals.articleTags ))
     ; __append("\">\n      \n      <!-- Override le type pour les articles -->\n      <meta property=\"og:type\" content=\"article\">\n    ")
     ;  } 
-    ; __append("\n\n    <!-- Schema.org for Google -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"")
+    ; __append("\n\n    <!-- Schema.org for Google & AI Engines -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@graph\": [\n        {\n          \"@type\": \"ProfessionalService\",\n          \"@id\": \"https://portfolio.laurentxdubois.com/#business\",\n          \"name\": \"Laurent X. Dubois Photography\",\n          \"alternateName\": \"Laurent X. Dubois Photographe\",\n          \"url\": \"https://portfolio.laurentxdubois.com\",\n          \"image\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n          \"logo\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n          \"telephone\": \"+33612330964\",\n          \"email\": \"Hello@LaurentXDubois.com\",\n          \"priceRange\": \"€€€\",\n          \"address\": {\n            \"@type\": \"PostalAddress\",\n            \"addressLocality\": \"Paris\",\n            \"addressCountry\": \"FR\"\n          },\n          \"areaServed\": [\"Paris\", \"France\", \"International\"],\n          \"sameAs\": [\n            \"https://www.instagram.com/laurentxdubois/\",\n            \"https://www.youtube.com/channel/UCBKdjX7ZbqgZmNYWaU3izsw\",\n            \"https://www.facebook.com/LaurentXDubois.Photo\",\n            \"https://www.tiktok.com/@laurentxdubois\"\n          ]\n        },\n        {\n          \"@type\": \"")
     ; __append(escapeFn( locals.isArticle ? 'Article' : 'WebPage' ))
-    ; __append("\",\n      \"name\": \"")
-    ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
-    ; __append("\",\n      \"description\": \"")
-    ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
-    ; __append("\",\n      \"url\": \"https://portfolio.laurentxdubois.com")
+    ; __append("\",\n          \"@id\": \"https://portfolio.laurentxdubois.com")
     ; __append(escapeFn( path ))
-    ; __append("\",\n      \"image\": {\n        \"@type\": \"ImageObject\",\n        \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n        \"width\": \"1200\",\n        \"height\": \"630\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Laurent X. Dubois Photography\",\n        \"logo\": {\n          \"@type\": \"ImageObject\",\n          \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\"\n        }\n      }")
+    ; __append("#webpage\",\n          \"url\": \"https://portfolio.laurentxdubois.com")
+    ; __append(escapeFn( path ))
+    ; __append("\",\n          \"name\": \"")
+    ; __append(escapeFn( locals.pageTitle || t('common.meta.defaultTitle') ))
+    ; __append("\",\n          \"description\": \"")
+    ; __append(escapeFn( locals.pageDescription || t('common.meta.defaultDescription') ))
+    ; __append("\",\n          \"inLanguage\": \"")
+    ; __append(escapeFn( currentLang ))
+    ; __append("\",\n          \"isPartOf\": {\n            \"@id\": \"https://portfolio.laurentxdubois.com/#business\"\n          },\n          \"image\": {\n            \"@type\": \"ImageObject\",\n            \"url\": \"https://portfolio.laurentxdubois.com/img/laurent-profile.jpg\",\n            \"width\": \"1200\",\n            \"height\": \"630\"\n          }")
     ;  if (locals.isArticle) { 
-    ; __append(",\n      \"articleSection\": \"")
+    ; __append(",\n          \"articleSection\": \"")
     ; __append(escapeFn( locals.articleSection ))
-    ; __append("\",\n      \"keywords\": \"")
+    ; __append("\",\n          \"keywords\": \"")
     ; __append(escapeFn( locals.articleTags ))
-    ; __append("\",\n      \"datePublished\": \"")
+    ; __append("\",\n          \"datePublished\": \"")
     ; __append(escapeFn( locals.publishDate ))
-    ; __append("\",\n      \"dateModified\": \"")
+    ; __append("\",\n          \"dateModified\": \"")
     ; __append(escapeFn( locals.modifiedDate ))
-    ; __append("\",\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Laurent X. Dubois\"\n      }\n      ")
+    ; __append("\",\n          \"author\": {\n            \"@type\": \"Person\",\n            \"name\": \"Laurent X. Dubois\",\n            \"sameAs\": [\n              \"https://www.instagram.com/laurentxdubois/\",\n              \"https://www.youtube.com/channel/UCBKdjX7ZbqgZmNYWaU3izsw\",\n              \"https://www.facebook.com/LaurentXDubois.Photo\",\n              \"https://www.tiktok.com/@laurentxdubois\"\n            ]\n          }\n          ")
     ;  } 
-    ; __append("\n    }\n    </script>\n\n</head>\n\n<body>\n    <header class=\"header\">\n        <div class=\"burger-button\">\n            <div class=\"burger\"></div>\n        </div>\n        <ul class=\"menu-nav\">\n            <li class=\"menu-nav__item menu-nav__item-with-dropdown\">\n                <a href=\"#\" onclick=\"return false;\" class=\"menu-nav__link\">\n                    ")
+    ; __append("\n        }\n      ]\n    }\n    </script>\n\n</head>\n\n<body>\n    <header class=\"header\">\n        <div class=\"burger-button\">\n            <div class=\"burger\"></div>\n        </div>\n        <ul class=\"menu-nav\">\n            <li class=\"menu-nav__item menu-nav__item-with-dropdown\">\n                <a href=\"#\" onclick=\"return false;\" class=\"menu-nav__link\">\n                    ")
     ; __append(escapeFn( t('components.navigation.menu.fashion.title') ))
     ; __append("\n                </a>\n                <ul class=\"menu-nav__dropdown-menu\">\n                    <li class=\"menu-nav__dropdown-item\">\n                        <a href=\"")
     ; __append(escapeFn( getPageUrl('fashionWeek1') ))

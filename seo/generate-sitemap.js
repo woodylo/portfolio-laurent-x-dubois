@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { navigationUrls } = require('../src/utils/urlHelper');
 
-const DOMAIN = 'https://laurentxdubois.com';
+const DOMAIN = process.env.SITE_DOMAIN || 'https://portfolio.laurentxdubois.com';
 const CONFIG_PATH = path.join(__dirname, 'pages-to-index.txt');
 const EXAMPLE_CONFIG_PATH = path.join(__dirname, 'pages-to-index.example.txt');
 const OUTPUT_PATH = path.join(__dirname, '../public/sitemap.xml');

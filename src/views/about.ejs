@@ -1,0 +1,38 @@
+<%- include('./partials/header', { otherCSSFile: "about", otherJSFile: "about" }) %>
+<div class="about-container">
+    <div class="about-container__profile-col">
+        <img src="/img/laurent-profile.jpg" alt="Laurent X. Dubois" class="profile-img">
+        <div class="profile-actions">
+            <a href="<%= getPageUrl('contact') %>" class="btn-cta">
+                <%= t('pages.about.cta') %>
+            </a>
+            <a href="/CV" target="_blank" class="btn-secondary">
+                <%= t('pages.about.downloadCV') %>
+            </a>
+        </div>
+    </div>
+    <div class="about-container__content-col">
+        <h1><%= t('pages.about.title') %></h1>
+        <h2><%= t('pages.about.subtitle') %></h2>
+        
+        <p class="about-container__text">
+            <%= t('pages.about.intro') %>
+        </p>
+
+        <h3><%= t('pages.about.bioTitle') %></h3>
+        <p class="about-container__text">
+            <%= t('pages.about.bio') %>
+        </p>
+
+        <h3><%= t('pages.about.specialtiesTitle') %></h3>
+        <ul class="specialties-list">
+            <% for (let i = 0; i < 5; i++) { %>
+                <% const item = t('pages.about.specialties.' + i); %>
+                <% if (item && item !== 'pages.about.specialties.' + i) { %>
+                    <li><%= item %></li>
+                <% } %>
+            <% } %>
+        </ul>
+    </div>
+</div>
+<%- include('./partials/footer') %>

@@ -6,6 +6,10 @@ const pageController = require('../controllers/pageController');
 router.get('/', pageController.renderHomePage);
 router.get('/en', pageController.renderHomePage);
 
+// About pages - language specific
+router.get('/a-propos', pageController.renderAboutPage);
+router.get('/en/about', pageController.renderAboutPage);
+
 // Thanks pages - language specific
 router.get('/merci', pageController.renderThanksPage);
 router.get('/en/thanks', pageController.renderThanksPage);
