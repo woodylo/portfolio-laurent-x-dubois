@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "portfolio-laurent-x-dubois",
+  "main": "src/worker.js",
+  "compatibility_date": "2024-09-23",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "none"
+  },
+  "vars": {
+    "CLICKY_ANALYTICS_MEASUREMENT_ID": "101198007",
+    "GTAG_ID": "GTM-MQ8P5MGL",
+    "RECIPIENT_EMAIL": "laurent.x.dubois@gmail.com"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

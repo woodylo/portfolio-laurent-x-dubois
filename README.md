@@ -58,25 +58,30 @@ For getting Gmail credentials:
 
 ### Development Setup
 
-1. **Clone the repository**
+1. **Install dependencies**
 ```bash
-git clone <repository-url>
-cd laurent_x_dubois
+npm install
 ```
 
-2. **Build and start development container**
+2. **Run local development (Worker Edge + SCSS watch)**
 ```bash
-COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker compose up dev
+npm run dev
 ```
 
-The development server will start on port 3000 with hot-reload enabled.
+The development server will start on `http://localhost:8787` with hot-reload and live SCSS compilation.
 
-### Production Deployment
-
-1. **Build and start production container**
+*Alternative (Node.js/Express server)*:
 ```bash
-docker compose up prod
+npm run dev:node
 ```
+
+### ☁️ Cloudflare Workers Deployment
+
+1. **Deploy to Cloudflare**
+```bash
+npm run deploy
+```
+*(Or connect your GitHub repository directly to Cloudflare Pages / Workers for continuous deployment).*
 
 ## 📂 Project Structure
 

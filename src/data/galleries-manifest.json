@@ -1,0 +1,621 @@
+{
+  "galleries": [
+    "20140810-marie-wu",
+    "20141123-diana",
+    "20141123-gerda",
+    "20141214-anna-kovalchuk",
+    "20150316-maria-popravko",
+    "20150317-alex-mc-millan",
+    "20150321-lisa-soto",
+    "20151213-macha-ka",
+    "20160720-aleksandra",
+    "20160806-maja-kirner",
+    "20160827-anna",
+    "20230219-alyssa",
+    "agency-test",
+    "beauty",
+    "default",
+    "editorial",
+    "empty",
+    "fashion",
+    "fashion-week-1",
+    "fashion-week-2",
+    "inspi-studio-1",
+    "interior",
+    "landscape",
+    "miss",
+    "patrick",
+    "personal",
+    "pila",
+    "politics",
+    "portraits",
+    "projects",
+    "victoria-chd",
+    "wedding"
+  ],
+  "details": {
+    "20140810-marie-wu": {
+      "galleryPath": "/galleries/20140810-marie-wu",
+      "imageNames": [
+        "04-marie-wu-beauty-portrait-minimalist-studio-lighting.webp",
+        "03-marie-wu-fashion-portrait-black-tank-top-studio.webp",
+        "02-marie-wu-portrait-profile-dramatic-closeup-asian-model.webp",
+        "01-marie-wu-portrait-dramatic-lighting-black-hair-beauty.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "20141123-diana": {
+      "galleryPath": "/galleries/20141123-diana",
+      "imageNames": [
+        "04-diana-fashion-portrait-white-blazer-artistic.webp",
+        "03-diana-casual-portrait-grey-sweater-natural-beauty.webp",
+        "02-diana-fashion-editorial-black-lingerie-sitting-pose.webp",
+        "01-diana-portrait-lingerie-long-hair-dramatic-beauty.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "20141123-gerda": {
+      "galleryPath": "/galleries/20141123-gerda",
+      "imageNames": [
+        "04-gerda-fashion-portrait-fur-vest-artistic-noir.webp",
+        "03-gerda-casual-portrait-denim-shorts-chair-pose.webp",
+        "02-gerda-fashion-editorial-white-blouse-black-pants-full-body.webp",
+        "01-gerda-portrait-white-shirt-long-hair-dramatic-lighting.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "20141214-anna-kovalchuk": {
+      "galleryPath": "/galleries/20141214-anna-kovalchuk",
+      "imageNames": [
+        "05-anna-kovalchuk-portrait-white-shirt-expressive-pose.webp",
+        "04-anna-kovalchuk-editorial-black-dress-side-pose.webp",
+        "03-anna-kovalchuk-fashion-black-dress-full-body-minimal.webp",
+        "02-anna-kovalchuk-beauty-portrait-intimate-studio-pose.webp",
+        "01-anna-kovalchuk-artistic-portrait-beauty-dramatic-lighting.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "20150316-maria-popravko": {
+      "galleryPath": "/galleries/20150316-maria-popravko",
+      "imageNames": [
+        "05-maria-popravko-beauty-portrait-wet-hair-white-shirt.webp",
+        "04-maria-popravko-studio-portrait-white-button-down-dramatic.webp",
+        "03-maria-popravko-fashion-portrait-white-shirt-side-profile.webp",
+        "02-maria-popravko-editorial-white-shirt-sitting-pose-classic.webp",
+        "01-maria-popravko-fashion-white-shirt-jeans-casual-pose.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "20150317-alex-mc-millan": {
+      "galleryPath": "/galleries/20150317-alex-mc-millan",
+      "imageNames": [
+        "02-alex-mcmillan-corporate-portrait-color.webp",
+        "01-alex-mcmillan-corporate-portrait-black-and-white.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "20150321-lisa-soto": {
+      "galleryPath": "/galleries/20150321-lisa-soto",
+      "imageNames": [
+        "05-lisa-soto-fashion-white-dress-pose.webp",
+        "04-lisa-soto-portrait-white-dress-profile.webp",
+        "03-lisa-soto-beauty-portrait-black-top.webp",
+        "02-lisa-soto-portrait-black-tshirt-long-hair.webp",
+        "01-lisa-soto-fashion-black-outfit-full-body.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "20151213-macha-ka": {
+      "galleryPath": "/galleries/20151213-macha-ka",
+      "imageNames": [
+        "04-mika-chu-fashion-editorial-burgundy-dress-side.webp",
+        "04-macha-ka-fashion-editorial-burgundy-dress-side.webp",
+        "03-mika-chu-fashion-editorial-black-gown-side.webp",
+        "03-macha-ka-fashion-editorial-black-gown-side.webp",
+        "02-mika-chu-fashion-beauty-portrait-jewelry.webp",
+        "02-macha-ka-fashion-beauty-portrait-jewelry.webp",
+        "01-mika-chu-fashion-editorial-black-dress-full-length.webp",
+        "01-macha-ka-fashion-editorial-black-dress-full-length.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "20160720-aleksandra": {
+      "galleryPath": "/galleries/20160720-aleksandra",
+      "imageNames": [
+        "04-aleksandra-fashion-portrait-red-plaid-shirt.webp",
+        "03-aleksandra-fashion-portrait-black-silk-sitting.webp",
+        "02-aleksandra-fashion-editorial-black-dress-dramatic-light.webp",
+        "01-aleksandra-fashion-editorial-black-dress-shoulder-pose.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "20160806-maja-kirner": {
+      "galleryPath": "/galleries/20160806-maja-kirner",
+      "imageNames": [
+        "03-maja-kirner-fashion-editorial-white-jacket-pearl-earrings.webp",
+        "02-maja-kirner-fashion-editorial-black-intimates-bw.webp",
+        "01-maja-kirner-fashion-portrait-black-top-casual.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "20160827-anna": {
+      "galleryPath": "/galleries/20160827-anna",
+      "imageNames": [
+        "05-anna-fashion-portrait-black-top-minimal-color.webp",
+        "04-anna-fashion-portrait-black-top-minimal-bw.webp",
+        "03-anna-fashion-editorial-black-top-jeans-color.webp",
+        "02-anna-fashion-editorial-black-top-jeans-bw.webp",
+        "01-anna-fashion-portrait-black-top-necklace.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "20230219-alyssa": {
+      "galleryPath": "/galleries/20230219-alyssa",
+      "imageNames": [
+        "19-alyssa-lebon-fashion-editorial-white-tank-crossed-arms.webp",
+        "19-alyssa-fashion-editorial-white-tank-crossed-arms.webp",
+        "18-alyssa-lebon-fashion-portrait-tank-top-thoughtful.webp",
+        "18-alyssa-fashion-portrait-tank-top-thoughtful.webp",
+        "17-alyssa-lebon-fashion-editorial-white-tank-minimal.webp",
+        "17-alyssa-fashion-editorial-white-tank-minimal.webp",
+        "16-alyssa-lebon-fashion-portrait-leather-tank-sitting.webp",
+        "16-alyssa-fashion-portrait-leather-tank-sitting.webp",
+        "15-alyssa-lebon-fashion-editorial-leather-jacket-casual-pose.webp",
+        "15-alyssa-fashion-editorial-leather-jacket-casual-pose.webp",
+        "14-alyssa-lebon-fashion-portrait-leather-white-tank-side.webp",
+        "14-alyssa-fashion-portrait-leather-white-tank-side.webp",
+        "13-alyssa-lebon-fashion-editorial-leather-jacket-denim-standing.webp",
+        "13-alyssa-fashion-editorial-leather-jacket-denim-standing.webp",
+        "12-alyssa-lebon-fashion-editorial-leather-jacket-pose.webp",
+        "12-alyssa-fashion-editorial-leather-jacket-pose.webp",
+        "11-alyssa-lebon-fashion-portrait-leather-jacket-white-tank.webp",
+        "11-alyssa-fashion-portrait-leather-jacket-white-tank.webp",
+        "10-alyssa-lebon-fashion-editorial-cropped-tank-leather.webp",
+        "10-alyssa-fashion-editorial-cropped-tank-leather.webp",
+        "09-alyssa-lebon-fashion-portrait-leather-jacket-side-pose.webp",
+        "09-alyssa-fashion-portrait-leather-jacket-side-pose.webp",
+        "08-alyssa-lebon-fashion-editorial-leather-jacket-white-top.webp",
+        "08-alyssa-fashion-editorial-leather-jacket-white-top.webp",
+        "07-alyssa-lebon-fashion-portrait-leather-jacket-tank-top.webp",
+        "07-alyssa-fashion-portrait-leather-jacket-tank-top.webp",
+        "06-alyssa-lebon-fashion-editorial-leather-jacket-smile.webp",
+        "06-alyssa-fashion-editorial-leather-jacket-smile.webp",
+        "05-alyssa-lebon-fashion-portrait-black-blazer-dramatic.webp",
+        "05-alyssa-fashion-portrait-black-blazer-dramatic.webp",
+        "04-alyssa-lebon-fashion-editorial-black-blazer-hands-up.webp",
+        "04-alyssa-fashion-editorial-black-blazer-hands-up.webp",
+        "03-alyssa-lebon-fashion-portrait-black-blazer-jeans.webp",
+        "03-alyssa-fashion-portrait-black-blazer-jeans.webp",
+        "02-alyssa-lebon-fashion-editorial-black-blazer-side-pose.webp",
+        "02-alyssa-fashion-editorial-black-blazer-side-pose.webp",
+        "01-alyssa-lebon-fashion-portrait-black-blazer-curls.webp",
+        "01-alyssa-fashion-portrait-black-blazer-curls.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "agency-test": {
+      "galleryPath": "/galleries/agency-test",
+      "imageNames": [
+        "2020-11-25-fashion-portrait-dramatic-side-pose.webp",
+        "2020-09-28-lana-tran-fashion-beauty-portrait.webp",
+        "2019-01-12-fashion-editorial-casual-sitting-pose.webp",
+        "2016-10-11-fashion-editorial-dark-intimate-pose.webp",
+        "2016-09-12-anna-fashion-editorial-denim-casual.webp",
+        "2016-08-06-maja-kirner-fashion-portrait-moody.webp",
+        "2016-08-06-maja-kirner-fashion-editorial-white-suit.webp",
+        "2015-04-15-portrait-male-model-dramatic-bw.webp",
+        "2015-01-02-fashion-editorial-black-intimates-pose.webp",
+        "2014-12-07-fashion-beauty-portrait-dramatic-light.webp",
+        "2014-11-15-fashion-portrait-black-mesh-studio.webp",
+        "2014-09-13-fashion-editorial-black-dress-minimal-bw.webp",
+        "2014-08-10-fashion-beauty-portrait-long-dark-hair.webp",
+        "2014-08-09-fashion-portrait-black-outfit-dramatic-pose.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "beauty": {
+      "galleryPath": "/galleries/beauty",
+      "imageNames": [
+        "2012-06-02-beauty-portrait-jewelry-glamour-makeup.webp",
+        "2011-11-13-beauty-portrait-fantasy-makeup-crystals.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "default": {
+      "galleryPath": "/galleries/default",
+      "imageNames": [
+        "2020-12-22-fashion-portrait-woman-black-whitelaurent-dubois-photographie.webp",
+        "2020-11-22-fashion-male-model-beige-coat-tattoolaurent-dubois-photographie.webp",
+        "2020-11-22-fashion-editorial-pink-dress-vintagelaurent-dubois-photographie.webp",
+        "2019-01-20-fashion-beach-sunset-swimwearlaurent-dubois-photographie.webp",
+        "2019-01-16-fashion-swimwear-poolside-summerlaurent-dubois-photographie.webp",
+        "2017-01-26-beauty-portrait-bodypaint-neon-bluelaurent-dubois-photographie.webp",
+        "2017-01-21-beauty-portrait-red-eyeshadow-nailslaurent-dubois-photographie.webp",
+        "2016-10-11-fashion-portrait-intimate-studiolaurent-dubois-photographie.webp",
+        "2016-09-12-anna-fashion-editorial-intimate-denimlaurent-dubois-photographie.webp",
+        "2016-08-06-maja-kirner-fashion-portrait-moody-bwlaurent-dubois-photographie.webp",
+        "2016-08-06-maja-kirner-fashion-portrait-casual-poselaurent-dubois-photographie.webp",
+        "2015-04-15-male-model-portrait-beard-artisticlaurent-dubois-photographie.webp",
+        "2014-09-13-fashion-editorial-black-dress-urban-bwlaurent-dubois-photographie.webp",
+        "2010-05-07-beauty-portrait-asian-floral-colorfullaurent-dubois-photographie.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "editorial": {
+      "galleryPath": "/galleries/editorial",
+      "imageNames": [
+        "2020-12-22-dramatic-portrait-black-turtleneck-bw.webp",
+        "2020-11-22-vintage-mood-pink-dress-interior.webp",
+        "2020-11-22-mens-fashion-beige-coat-tattoo-editorial.webp",
+        "2017-spring-yellow-dress-garden-fashion.webp",
+        "2017-paris-floral-dress-editorial-street.webp",
+        "2017-02-paris-mon-amour-editorial-cover.webp",
+        "2017-01-paris-cafe-fashion-editorial-sunglasses.webp",
+        "2014-11-08-fashion-portrait-white-shirt-bw.webp",
+        "2014-11-08-elegant-profile-portrait-bw.webp",
+        "2014-11-08-dramatic-blue-light-portrait.webp",
+        "2014-09-13-minimalist-portrait-black-outfit.webp",
+        "2014-09-13-fashion-black-dress-wall-sunglasses.webp",
+        "2014-09-13-dramatic-portrait-side-pose.webp",
+        "2013-08-08-vintage-car-fashion-portrait-bride.webp",
+        "2013-08-08-fashion-editorial-white-dress-car.webp",
+        "2013-08-08-black-white-editorial-resting-pose.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "empty": {
+      "galleryPath": "/galleries/empty",
+      "imageNames": [],
+      "videosFolderExists": false
+    },
+    "fashion": {
+      "galleryPath": "/galleries/fashion",
+      "imageNames": [
+        "2013-08-08-vintage-car-bride-portrait-editorial.webp",
+        "2013-08-08-moody-portrait-black-outfit-editorial.webp",
+        "2013-08-08-luxury-car-white-dress-fashion.webp",
+        "2013-08-08-black-white-fashion-pose-rocks.webp",
+        "2011-08-07-night-rain-fashion-editorial-red.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "fashion-week-1": {
+      "galleryPath": "/galleries/fashion-week-1",
+      "imageNames": [
+        "2014-09-26-mirror-reflection-backstage-scene-bw.webp",
+        "2014-09-26-backstage-hair-styling-preparation-bw.webp",
+        "2014-07-08-models-group-backstage-monochrome.webp",
+        "2014-07-08-fashion-show-front-row-audience-bw.webp",
+        "2014-07-08-fashion-show-audience-profile-bw.webp",
+        "2013-10-01-runway-floral-dress-spotlight-bw.webp",
+        "2013-10-01-model-designer-portrait-backstage-bw.webp",
+        "2013-10-01-model-candid-smile-portrait-bw.webp",
+        "2013-10-01-model-black-cape-dramatic-bw.webp",
+        "2013-10-01-model-beauty-profile-portrait-bw.webp",
+        "2013-10-01-model-backstage-jewelry-closeup-bw.webp",
+        "2013-10-01-backstage-model-makeup-preparation-bw.webp",
+        "2013-10-01-backstage-makeup-artist-working-bw.webp",
+        "2013-09-30-model-black-coat-outdoor-fashion.webp",
+        "2013-09-26-runway-models-colorful-prints-collection.webp",
+        "2013-09-26-designer-portrait-backstage-bw.webp",
+        "2013-09-26-designer-interview-backstage-bw.webp",
+        "2013-09-24-runway-show-audience-spotlight-bw.webp",
+        "2013-09-24-model-white-shirt-outdoor-portrait.webp",
+        "2013-09-24-model-portrait-shadow-artistic-bw.webp",
+        "2013-09-24-model-photocall-black-dress-bw.webp",
+        "2013-09-24-fashion-show-audience-photographers.webp",
+        "2012-10-03-model-dramatic-portrait-bw.webp",
+        "2012-10-03-fashion-display-blue-lighting.webp",
+        "2012-10-03-backstage-model-phone-candid-bw.webp",
+        "2012-10-03-backstage-makeup-preparation-bw.webp",
+        "2012-10-02-runway-models-line-perspective-bw.webp",
+        "2012-10-02-backstage-models-dress-detail-bw.webp",
+        "2012-10-01-runway-models-finale-lineup-bw.webp",
+        "2012-10-01-runway-model-sequin-dress-closeup-bw.webp",
+        "2012-10-01-models-backstage-group-portrait-bw.webp",
+        "2012-10-01-model-beauty-headband-closeup-bw.webp",
+        "2012-10-01-fashion-venue-chandelier-interior.webp",
+        "2012-10-01-backstage-preparation-lace-dress-bw.webp",
+        "2012-09-30-model-spotlight-dark-contrast.webp",
+        "2012-09-30-model-red-jacket-sunlight-portrait.webp",
+        "2012-09-30-model-headshot-lace-detail-bw.webp",
+        "2012-09-30-model-close-up-dramatic-bw.webp",
+        "2012-09-30-backstage-model-profile-bw.webp",
+        "2012-09-30-backstage-model-camera-candid.webp",
+        "2012-09-28-runway-models-lineup-backstage-bw.webp",
+        "2012-09-28-fashion-week-front-row-audience.webp",
+        "2012-03-01-fashion-week-backstage-styling-bw.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "fashion-week-2": {
+      "galleryPath": "/galleries/fashion-week-2",
+      "imageNames": [
+        "2015-10-07-models-lineup-finale-white-bw.webp",
+        "2015-10-07-model-white-shirt-audience-bw.webp",
+        "2015-10-07-model-profile-natural-light-bw.webp",
+        "2015-10-07-model-interview-backstage-bw.webp",
+        "2015-10-07-model-curly-hair-makeup-bw.webp",
+        "2015-10-07-model-black-turtleneck-portrait-bw.webp",
+        "2015-10-07-makeup-artist-working-closeup-bw.webp",
+        "2015-10-02-model-casual-window-portrait-bw.webp",
+        "2015-10-02-model-black-outfit-sitting-bw.webp",
+        "2015-10-02-male-model-headshot-portrait.webp",
+        "2015-10-02-backstage-polaroid-selection-bw.webp",
+        "2015-01-29-runway-wedding-dress-silhouette-bw.webp",
+        "2015-01-29-model-sequin-dress-backstage-bw.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "inspi-studio-1": {
+      "galleryPath": "/galleries/inspi-studio-1",
+      "imageNames": [
+        "30-casual-fashion-lookbook.webp",
+        "29-emilie-model-artistic-portrait.webp",
+        "28-minimalist-fashion-portrait.webp",
+        "27-sporty-fashion-editorial.webp",
+        "26-elegant-black-fashion-portrait.webp",
+        "25-leather-jacket-outdoor-portrait.webp",
+        "24-agata-model-portrait-dark.webp",
+        "23-professional-fashion-headshot.webp",
+        "22-model-glamour-portrait-studio.webp",
+        "21-beauty-portrait-natural-light.webp",
+        "20-black-white-fashion-editorial.webp",
+        "19-artistic-fashion-portrait-mood.webp",
+        "18-dramatic-portrait-studio-light.webp",
+        "17-dark-hair-model-fashion.webp",
+        "16-editorial-black-dress-portrait.webp",
+        "15-blonde-model-street-fashion.webp",
+        "14-asian-model-profile-portrait.webp",
+        "13-fashion-portrait-dramatic-lighting.webp",
+        "12-artistic-portrait-intimate.webp",
+        "11-fashion-editorial-overalls-bw.webp",
+        "10-artistic-portrait-light.webp",
+        "09-artistic-portrait-study.webp",
+        "08-artistic-fashion-portrait-studio.webp",
+        "07-editorial-portrait-mood-lighting.webp",
+        "06-artistic-portrait-light-study.webp",
+        "05-portrait-overalls-studio-monochrome.webp",
+        "04-artistic-underwater-fashion-blue.webp",
+        "03-fashion-editorial-shadow-duo-study.webp",
+        "02-editorial-portrait-dark-mood-studio.webp",
+        "01-artistic-portrait-fashion-monochrome-studio.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "interior": {
+      "galleryPath": "/galleries/interior",
+      "imageNames": [
+        "2021-11-15-yellow-accent-office-space.webp",
+        "2021-11-15-professional-kitchen-stainless-steel.webp",
+        "2021-11-15-modern-office-seating-area.webp",
+        "2021-11-15-lounge-area-contemporary-design.webp",
+        "2021-11-15-event-catering-setup.webp",
+        "2021-11-15-elegant-table-setting-white.webp",
+        "2021-11-15-corporate-meeting-room-modern.webp",
+        "2021-11-15-corporate-dining-setup.webp",
+        "2021-11-15-corporate-catering-buffet.webp",
+        "2021-11-15-collaborative-space-modern.webp",
+        "2021-11-15-blue-conference-room-business.webp",
+        "2021-11-15-artistic-centerpiece-dark.webp",
+        "2015-04-09-resort-pool-architecture.webp",
+        "2015-04-09-modern-staircase-interior.webp",
+        "2015-04-09-luxury-dining-room-design.webp",
+        "2015-04-08-modern-bathroom-interior-design.webp",
+        "2015-04-08-luxury-hotel-detail-decor.webp",
+        "2015-04-08-hotel-champagne-service-display.webp",
+        "2015-04-08-bright-luxury-bathroom-garden.webp",
+        "08-hotel-room-workspace-area.webp",
+        "07-luxury-bathroom-design.webp",
+        "06-premium-suite-seating-area.webp",
+        "05-canopy-bed-luxury-suite.webp",
+        "04-spacious-hotel-suite-design.webp",
+        "03-hotel-room-vanity-mirror.webp",
+        "02-bright-modern-hotel-room.webp",
+        "01-luxury-hotel-bedroom-suite.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "landscape": {
+      "galleryPath": "/galleries/landscape",
+      "imageNames": [
+        "2013-02-06-shanghai-pudong-skyline-night.webp",
+        "2010-11-12-bordeaux-place-bourse-reflection-night.webp",
+        "2010-07-10-paris-eiffel-tower-night-cityscape.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "miss": {
+      "galleryPath": "/galleries/miss",
+      "imageNames": [
+        "2024-06-08-miss-Charlene-Izard-outdoor-portrait-green.webp",
+        "2024-05-18-miss-theaphany-hy-Meryl-Reis-duo-portrait-formal.webp",
+        "2024-05-18-miss-theaphany-hy-Meryl-Reis-duo-portrait-close.webp",
+        "2024-05-18-miss-formal-portrait-silver.webp",
+        "2024-05-18-miss-fashion-portrait.webp",
+        "2024-05-18-miss-duo-portrait-formal.webp",
+        "2024-05-18-miss-duo-portrait-close.webp",
+        "2024-05-18-miss-duo-evening-gowns.webp",
+        "2024-05-18-miss-duo-casual-portrait.webp",
+        "2024-05-18-miss-crown-portrait-black.webp",
+        "2024-05-18-miss-Meryl-Reis-formal-portrait-silver.webp",
+        "2024-05-18-miss-Elena-Faliez-fashion-portrait.webp",
+        "2024-05-18-miss-Elena-Faliez-Laure-Mattioli-duo-casual-portrait.webp",
+        "2024-03-10-miss-group-interior.webp",
+        "2024-03-10-miss-contestants-presentation.webp",
+        "2024-03-10-miss-contestants-lineup.webp",
+        "2024-03-10-miss-contestants-lineup-by-Laurent-Dubois.webp",
+        "2024-03-10-miss-Lenka-Bazerque-contestants-presentation.webp",
+        "2023-10-22-miss-finalists-stage.webp",
+        "2023-10-22-miss-crowning-ceremony-stage.webp",
+        "2023-10-01-miss-studio-portrait-gown.webp",
+        "2023-10-01-miss-crown-portrait-silver.webp",
+        "2023-07-06-miss-theaphany-hy-palace-casual-portrait.webp",
+        "2023-07-06-miss-signing-ceremony.webp",
+        "2023-07-06-miss-senate-meeting.webp",
+        "2023-07-06-miss-senate-chamber-view.webp",
+        "2023-07-06-miss-palace-formal-portrait.webp",
+        "2023-07-06-miss-palace-casual-portrait.webp",
+        "2023-07-06-miss-palace-balcony-portrait.webp",
+        "2023-07-06-miss-official-stairs-group.webp",
+        "2023-07-06-miss-official-meeting.webp",
+        "2023-07-06-miss-group-palace-visit.webp",
+        "2023-07-06-miss-france-red-carpet.webp",
+        "2023-07-06-miss-france-palace-portrait.webp",
+        "2023-07-06-miss-Theaphany-HY-palace-balcony-portrait.webp",
+        "2023-07-06-miss-Seine-et-Marne-Souryphone-Senateur-official-stairs-group.webp",
+        "2023-07-06-miss-Seine-Marne-Ugo-Sylvain-Collonge-Comite-senate-chamber-view.webp",
+        "2023-07-06-miss-Meryl-Reis-france-red-carpet.webp",
+        "2023-07-06-miss-Eva-Moosbauer-palace-formal-portrait.webp",
+        "2023-06-22-miss-pageant-group-stage.webp",
+        "2023-05-28-miss-theaphany-hy-outdoor-portrait-blue.webp",
+        "2023-05-28-miss-outdoor-portrait-blue.webp",
+        "2023-05-13-miss-pageant-evening-gowns.webp",
+        "2023-05-13-miss-crowning-moment-stage.webp",
+        "2023-05-13-miss-Camila-Alash-Indira-Ampiot-Victoria-Chauchard-crowning-moment-stage.webp",
+        "2022-10-23-miss-pageant-finalists-stage.webp",
+        "2022-10-23-miss-Diane-Leyre-pageant-finalists-stage.webp",
+        "2022-06-30-miss-duo-portrait-bw.webp",
+        "2022-06-30-miss-Claudia-Cunha-duo-portrait-bw.webp",
+        "2022-05-21-miss-winners-group-stage.webp",
+        "2022-05-21-miss-france-contestant-red.webp",
+        "2022-05-21-miss-france-Diane-Leyre-contestant-red.webp",
+        "2022-05-21-miss-Diane-Leyre-Claudia-Cunha-winners-group-stage.webp",
+        "2021-07-18-miss-portrait-black-white.webp",
+        "2021-07-18-Laura-Mordomo-miss-portrait-black-white.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "patrick": {
+      "galleryPath": "/galleries/patrick",
+      "imageNames": [
+        "2022-03-25-patrick-phavorachit-corporate-portrait-05.webp",
+        "2022-03-25-patrick-phavorachit-corporate-portrait-04.webp",
+        "2022-03-25-patrick-phavorachit-corporate-portrait-03.webp",
+        "2022-03-25-patrick-phavorachit-corporate-portrait-02.webp",
+        "2022-03-25-patrick-phavorachit-corporate-portrait-01.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "personal": {
+      "galleryPath": "/galleries/personal",
+      "imageNames": [
+        "2019-01-12-artistic-portrait-bw-04.webp",
+        "2019-01-12-artistic-portrait-bw-03.webp",
+        "2019-01-12-artistic-portrait-bw-02.webp",
+        "2019-01-12-artistic-portrait-bw-01.webp",
+        "2015-05-07-portrait-floral-beauty.webp",
+        "2014-12-14-artistic-studio-portrait.webp",
+        "2014-09-10-fashion-model-bw-portrait.webp",
+        "2014-09-09-fashion-silhouette-studio.webp",
+        "2014-08-10-portrait-artistic-bw.webp",
+        "2014-08-10-fashion-tattoo-portrait.webp",
+        "2014-03-15-fashion-portrait-black-white.webp",
+        "2012-08-15-fashion-portrait-outdoor-red.webp",
+        "2012-06-10-fashion-portrait-blue-studio.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "pila": {
+      "galleryPath": "/galleries/pila",
+      "imageNames": [
+        "2023-02-04-pila-profile-portrait-studio-5.webp",
+        "2023-02-04-pila-emotional-portrait-studio-3.webp",
+        "2023-02-04-pila-elegant-portrait-studio-1.webp",
+        "2023-02-04-pila-dramatic-portrait-studio-2.webp",
+        "2023-02-04-pila-classic-portrait-studio-6.webp",
+        "2023-02-04-pila-artistic-portrait-studio-4.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "politics": {
+      "galleryPath": "/galleries/politics",
+      "imageNames": [
+        "2023-07-06-senate-chamber-visit-2.webp",
+        "2023-07-06-miss-france-support-event-3.webp",
+        "2023-07-06-miss-france-senator-portrait-4.webp",
+        "2023-07-06-miss-france-senate-portrait-1.webp",
+        "2023-07-06-miss-france-senate-meeting-3.webp",
+        "2023-07-06-miss-france-senate-group-8.webp",
+        "2023-07-06-miss-france-senate-balcony-5.webp",
+        "2023-07-06-miss-france-parliament-exterior-6.webp",
+        "2023-07-06-miss-france-document-signing-7.webp",
+        "2023-07-06-miss-france-campaign-visit-2.webp",
+        "2023-07-06-campaign-team-meeting-1.webp",
+        "2023-01-14-constituent-gathering-2.webp",
+        "2023-01-14-constituent-engagement-6.webp",
+        "2023-01-14-campaign-town-hall-5.webp",
+        "2023-01-14-campaign-informal-meeting-1.webp",
+        "2023-01-14-campaign-crowd-address-3.webp",
+        "2023-01-14-campaign-audience-speech-4.webp",
+        "2022-06-12-nighttime-campaign-meeting-8.webp",
+        "2022-06-12-evening-campaign-event-6.webp",
+        "2022-06-12-community-engagement-event-9.webp",
+        "2022-06-12-candidate-constituent-discussion-2.webp",
+        "2022-06-12-campaign-networking-event-4.webp",
+        "2022-06-12-campaign-meeting-outdoor-group-1.webp",
+        "2022-06-12-campaign-indoor-discussion-7.webp",
+        "2022-06-12-campaign-evening-conversation-3.webp",
+        "2022-06-12-campaign-community-gathering-5.webp"
+      ],
+      "videosFolderExists": false
+    },
+    "portraits": {
+      "galleryPath": "/galleries/portraits",
+      "imageNames": [
+        "2017-02-20-fashion-portrait-dramatic-bw.webp",
+        "2017-01-26-bodyart-neon-creative-portrait.webp",
+        "2017-01-21-beauty-makeup-creative-nails.webp",
+        "2015-05-07-asian-beauty-floral-portrait.webp",
+        "2015-04-15-male-model-portrait-artistic.webp",
+        "2014-11-15-beauty-portrait-studio-bw.webp",
+        "2013-05-18-fashion-portrait-monochrome-dramatic.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "projects": {
+      "galleryPath": "/galleries/projects",
+      "imageNames": [
+        "2019-07-13-lifestyle-portrait-vintage-car.webp",
+        "2014-12-14-artistic-nude-dramatic-portrait-bw.webp",
+        "2012-08-15-asian-model-traditional-dress-architecture.webp",
+        "2012-06-10-fashion-boudoir-portrait-studio.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "victoria-chd": {
+      "galleryPath": "/galleries/victoria-chd",
+      "imageNames": [
+        "2023-02-11-victoria-chd-professional-portrait-smiling.webp",
+        "2023-02-11-victoria-chd-professional-headshot-natural.webp",
+        "2023-02-11-victoria-chd-elegant-portrait-profile.webp"
+      ],
+      "videosFolderExists": true
+    },
+    "wedding": {
+      "galleryPath": "/galleries/wedding",
+      "imageNames": [
+        "19-wedding-couple-sunset-beach.webp",
+        "18-wedding-champagne-glasses-reception.webp",
+        "17-wedding-dessert-table-details.webp",
+        "16-wedding-rings-exchange-bw.webp",
+        "15-wedding-dress-detail-red.webp",
+        "14-wedding-groom-preparation-tie.webp",
+        "13-wedding-ties-accessories.webp",
+        "12-wedding-suits-preparation.webp",
+        "11-wedding-groom-shoes-grass.webp",
+        "10-wedding-rings-box-detail.webp",
+        "09-wedding-bride-shoes-detail.webp",
+        "08-wedding-rings-artistic-detail.webp",
+        "07-wedding-couple-garden-full.webp",
+        "06-wedding-bouquet-flowers-detail.webp",
+        "05-wedding-bride-preparation-detail.webp",
+        "04-wedding-groom-bowtie-detail.webp",
+        "03-wedding-venue-garden-entrance.webp",
+        "02-wedding-groom-bouquet-detail.webp",
+        "01-wedding-venue-classic-architecture-exterior.webp"
+      ],
+      "videosFolderExists": true
+    }
+  }
+}

@@ -4,11 +4,14 @@
   "description": "Laurent Dubois's portfolio website for photography",
   "main": "server.js",
   "scripts": {
+    "dev": "npm run build:manifest && concurrently -n \"scss,worker\" -c \"magenta,cyan\" \"sass --watch scss:public/css\" \"wrangler dev\"",
+    "dev:node": "npm run build:manifest && concurrently -n \"scss,server\" -c \"magenta,blue\" \"sass --watch scss:public/css\" \"nodemon --ext js,json,ejs,html,scss,jpg,png server.js\"",
+    "build:manifest": "node scripts/build-manifest.js",
+    "build:css": "sass scss:public/css --no-source-map",
+    "build:sitemap": "node seo/generate-sitemap.js",
+    "build": "npm run build:manifest && npm run build:css && npm run build:sitemap",
     "start": "node server.js",
-    "start:dev": "nodemon --ext js,json,ejs,html,scss,jpg,png server.js",
-    "scss": "sass --watch scss:public/css",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sitemap": "node seo/generate-sitemap.js"
+    "deploy": "npm run build && wrangler deploy"
   },
   "repository": {
     "type": "git",
@@ -21,13 +24,17 @@
     "debug": "^4.3.6",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
+    "eta": "^4.6.0",
     "express": "^4.19.2",
     "express-validator": "^7.1.0",
+    "hono": "^4.13.2",
     "http-errors": "^2.0.0",
     "nodemailer": "^9.0.1"
   },
   "devDependencies": {
+    "concurrently": "^10.0.4",
     "nodemon": "^3.1.4",
-    "sass": "^1.32.13"
+    "sass": "^1.32.13",
+    "wrangler": "^4.123.0"
   }
 }

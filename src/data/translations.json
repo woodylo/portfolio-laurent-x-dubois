@@ -1,0 +1,314 @@
+{
+  "fr": {
+    "components.contact-form": {
+      "title": "Contact",
+      "instruction": "Veuillez remplir le formulaire suivant :",
+      "fields": {
+        "name": {
+          "label": "*Nom :",
+          "placeholder": "Jean Dupont"
+        },
+        "email": {
+          "label": "*E-mail :",
+          "placeholder": "jean.dupont@gmail.com"
+        },
+        "telephone": {
+          "label": "Tél :",
+          "placeholder": "+33678930482"
+        },
+        "website": {
+          "label": "Site web :",
+          "placeholder": "www.jean-dupont.com"
+        },
+        "message": {
+          "label": "*Message :",
+          "placeholder": "Je suis intéressé par vos services car..."
+        }
+      },
+      "submit": "OK"
+    },
+    "components.footer": {
+      "inquiry": {
+        "text": "Pour une demande,",
+        "contactLink": "contactez-moi"
+      },
+      "links": {
+        "fashion": "mode",
+        "instagram": "instagram",
+        "facebook": "facebook",
+        "terms": "CGV",
+        "blog": "blog",
+        "tiktok": "tiktok"
+      },
+      "copyright": "Tous droits réservés."
+    },
+    "components.header": {
+      "title": "Laurent X. Dubois",
+      "location": "Paris",
+      "socialMedia": {
+        "instagram": "instagram",
+        "youtube": "youtube"
+      },
+      "languageSwitcher": {
+        "fr": "FR",
+        "en": "EN",
+        "frenchFlag": "Français",
+        "englishFlag": "Anglais"
+      }
+    },
+    "components.navigation": {
+      "menu": {
+        "fashion": {
+          "title": "mode",
+          "submenu": {
+            "fashionWeek1": "fashion week i",
+            "fashionWeek2": "fashion week ii",
+            "portraits": "portraits",
+            "projects": "projets"
+          }
+        },
+        "agencyTest": "tests agence",
+        "editorial": "éditorial",
+        "contactAndInfo": "contact & info"
+      }
+    },
+    "pages.contact": {
+      "info": {
+        "title": "Infos",
+        "bio": {
+          "title": "Bio",
+          "intro": "Photographe français basé à Paris.\nJe voyage dans le monde entier pour la photographie.\nN'hésitez pas à me contacter.",
+          "availabilities": {
+            "title": "Disponible pour :",
+            "items": [
+              "commercial",
+              "mode",
+              "intérieur",
+              "mariage",
+              "corporate",
+              "produit",
+              "événement"
+            ]
+          },
+          "outro": "Pour toute autre demande,\nn'hésitez pas à me contacter."
+        },
+        "personalContacts": {
+          "title": "Contacts Personnels",
+          "phone": "Tél : +33 6 12 33 09 64 (What'sApp)",
+          "email": "Mail : Hello@LaurentXDubois.com ou utilisez ce formulaire",
+          "cv": {
+            "text": "CV : ",
+            "link": "Télécharger ici",
+            "description": "(Portfolio COMPLET 5mo)"
+          }
+        }
+      }
+    },
+    "pages.error": {
+      "notFound": {
+        "title": "404 ERREUR",
+        "imageAlt": "Image 404 erreur"
+      }
+    },
+    "pages.gallery": {
+      "videoAlt": "Vidéo d'arrière-plan"
+    },
+    "pages.thanks": {
+      "imageAlt": "Image remerciement"
+    },
+    "common.messages": {
+      "validation": {
+        "required": {
+          "name": "Le nom est requis",
+          "email": "L'email est requis",
+          "message": "Le message est requis"
+        },
+        "invalid": {
+          "email": "Veuillez entrer un email valide"
+        }
+      },
+      "success": {
+        "emailSent": "Email envoyé avec succès !",
+        "thanks": {
+          "main": "Merci de nous avoir contacté !",
+          "sub": "Nous vous répondrons dans les plus brefs délais"
+        }
+      },
+      "error": {
+        "server": "Erreur serveur :("
+      }
+    },
+    "common.meta": {
+      "keywords": "Laurent X. Dubois, photographe, mode, portrait, Paris, France, corporate, événementiel, mariage, grossesse, particulier, soirées, produits, culinaire",
+      "defaultDescription": "Photographe et vidéaste professionnel à Paris, Laurent X. Dubois met son expertise au service de vos projets commerciaux, corporate et portraits. Images haute qualité pour marques et entreprises.",
+      "defaultTitle": "Laurent X. Dubois - Photographe et vidéaste de mode et portraits",
+      "pages": {
+        "home": {
+          "title": "Laurent X. Dubois - Portfolio de photographie",
+          "description": "Portfolio professionnel de Laurent X. Dubois, photographe à Paris. Mode, portraits, événements et photographie commerciale."
+        },
+        "contact": {
+          "title": "Contact - Laurent X. Dubois",
+          "description": "Contactez Laurent X. Dubois pour vos projets de photographie à Paris. Mode, portraits, événements et photographie commerciale."
+        }
+      },
+      "imageAlt": "Laurent X. Dubois - Photographe professionnel à Paris"
+    }
+  },
+  "en": {
+    "components.contact-form": {
+      "title": "Contact",
+      "instruction": "Please fill in the following form:",
+      "fields": {
+        "name": {
+          "label": "*Name:",
+          "placeholder": "John Doe"
+        },
+        "email": {
+          "label": "*E-mail:",
+          "placeholder": "john.doe@gmail.com"
+        },
+        "telephone": {
+          "label": "Tel:",
+          "placeholder": "+33678930482"
+        },
+        "website": {
+          "label": "Website:",
+          "placeholder": "www.john-doe.com"
+        },
+        "message": {
+          "label": "*Message:",
+          "placeholder": "I am interested in your services because..."
+        }
+      },
+      "submit": "OK"
+    },
+    "components.footer": {
+      "inquiry": {
+        "text": "For an inquiry,",
+        "contactLink": "contact me"
+      },
+      "links": {
+        "fashion": "fashion",
+        "instagram": "instagram",
+        "facebook": "facebook",
+        "terms": "T&Cs",
+        "blog": "blog",
+        "tiktok": "tiktok"
+      },
+      "copyright": "All rights reserved."
+    },
+    "components.header": {
+      "title": "Laurent X. Dubois",
+      "location": "Paris",
+      "socialMedia": {
+        "instagram": "instagram",
+        "youtube": "youtube"
+      },
+      "languageSwitcher": {
+        "fr": "FR",
+        "en": "EN",
+        "frenchFlag": "French",
+        "englishFlag": "English"
+      }
+    },
+    "components.navigation": {
+      "menu": {
+        "fashion": {
+          "title": "fashion",
+          "submenu": {
+            "fashionWeek1": "fashion week i",
+            "fashionWeek2": "fashion week ii",
+            "portraits": "portraits",
+            "projects": "projects"
+          }
+        },
+        "agencyTest": "agency test",
+        "editorial": "editorial",
+        "contactAndInfo": "contact & info"
+      }
+    },
+    "pages.contact": {
+      "info": {
+        "title": "Info",
+        "bio": {
+          "title": "Bio",
+          "intro": "French photographer based in Paris.\nI travel the world for photography.\nFeel free to contact me.",
+          "availabilities": {
+            "title": "Available for:",
+            "items": [
+              "commercial",
+              "fashion",
+              "interior",
+              "wedding",
+              "corporate",
+              "product",
+              "event"
+            ]
+          },
+          "outro": "For any other inquiries,\nfeel free to contact me."
+        },
+        "personalContacts": {
+          "title": "Personal Contacts",
+          "phone": "Tel: +33 6 12 33 09 64 (What'sApp)",
+          "email": "Mail: Hello@LaurentXDubois.com or use this form",
+          "cv": {
+            "text": "CV: ",
+            "link": "Download here",
+            "description": "(5mb FULL Portfolio)"
+          }
+        }
+      }
+    },
+    "pages.error": {
+      "notFound": {
+        "title": "404 ERROR",
+        "imageAlt": "404 error image"
+      }
+    },
+    "pages.gallery": {
+      "videoAlt": "Background video"
+    },
+    "pages.thanks": {
+      "imageAlt": "Thanks image"
+    },
+    "common.messages": {
+      "validation": {
+        "required": {
+          "name": "The name is required",
+          "email": "The email is required",
+          "message": "The message is required"
+        },
+        "invalid": {
+          "email": "Please enter a valid email"
+        }
+      },
+      "success": {
+        "emailSent": "Email successfully sent!",
+        "thanks": {
+          "main": "Thank you for contacting us!",
+          "sub": "We will get back to you as soon as possible"
+        }
+      },
+      "error": {
+        "server": "Server error :("
+      }
+    },
+    "common.meta": {
+      "keywords": "Laurent X. Dubois, photographer, fashion, portrait, Paris, France, corporate, events, wedding, pregnancy, private, parties, products, culinary",
+      "defaultDescription": "Professional photographer and videographer in Paris, Laurent X. Dubois puts his expertise at the service of your commercial, corporate and portrait projects. High quality images for brands and companies.",
+      "defaultTitle": "Laurent X. Dubois - Fashion and Portrait Photographer & Videographer",
+      "pages": {
+        "home": {
+          "title": "Laurent X. Dubois - Photography Portfolio",
+          "description": "Professional portfolio of Laurent X. Dubois, photographer in Paris. Fashion, portraits, events and commercial photography."
+        },
+        "contact": {
+          "title": "Contact - Laurent X. Dubois",
+          "description": "Contact Laurent X. Dubois for your photography projects in Paris. Fashion, portraits, events and commercial photography."
+        }
+      },
+      "imageAlt": "Laurent X. Dubois - Professional Photographer in Paris"
+    }
+  }
+}

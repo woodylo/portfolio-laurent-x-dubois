@@ -185,7 +185,7 @@ a {
 }
 @media screen and (min-width: 992px) {
   .header .menu-nav__link {
-    font-size: 0.8rem;
+    font-size: 0.938rem;
     width: fit-content;
   }
 }
@@ -265,7 +265,7 @@ a {
   font-variant: small-caps;
   font-weight: 300;
   letter-spacing: 0.188rem;
-  font-size: 1.3rem;
+  font-size: 1.563rem;
   white-space: nowrap;
 }
 .header .logo__subtitle {
@@ -273,7 +273,7 @@ a {
   font-family: "PlayfairDisplay-Regular";
   font-variant: small-caps;
   font-weight: 200;
-  font-size: 0.8rem;
+  font-size: 1.125rem;
   letter-spacing: 0.188rem;
   text-align: center;
 }
@@ -282,7 +282,7 @@ a {
   font-family: "PlayfairDisplay-Regular";
   font-variant: small-caps;
   font-weight: 100;
-  font-size: 0.7rem;
+  font-size: 1.125rem;
   letter-spacing: 0.188rem;
   text-align: center;
   white-space: nowrap;
@@ -388,5 +388,3 @@ a {
     margin-top: 0;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

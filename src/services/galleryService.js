@@ -1,34 +1,29 @@
-const fs = require('fs').promises;
-const path = require('path');
+const manifest = require('../data/galleries-manifest.json');
 
 class GalleryService {
   async getGalleryData(galleryName) {
-    const galleryPath = `/galleries/${galleryName}`;
-    const imagesPath = path.join(process.cwd(), 'public', galleryPath, 'images');
-    const videosPath = path.join(process.cwd(), 'public', galleryPath, 'videos');
-
-    const imageNames = await fs.readdir(imagesPath);
-    const videosFolderExists = await this.checkFolderExists(videosPath);
-
+    if (manifest && manifest.details && manifest.details[galleryName]) {
+      return manifest.details[galleryName];
+    }
     return {
-      galleryPath,
-      imageNames: imageNames.reverse(),
-      videosFolderExists
+      galleryPath: `/galleries/${galleryName}`,
+      imageNames: [],
+      videosFolderExists: false
     };
   }
 
   async getAllGalleries() {
-    const galleriesPath = path.join(process.cwd(), 'public/galleries');
-    return await fs.readdir(galleriesPath);
+    if (manifest && manifest.galleries) {
+      return manifest.galleries;
+    }
+    return [];
   }
 
-  async checkFolderExists(folderPath) {
-    try {
-      await fs.access(folderPath);
-      return true;
-    } catch {
-      return false;
+  async hasGallery(galleryName) {
+    if (manifest && manifest.details) {
+      return Boolean(manifest.details[galleryName]);
     }
+    return false;
   }
 }
 
