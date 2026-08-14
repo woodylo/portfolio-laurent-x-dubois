@@ -130,7 +130,7 @@
       "success": {
         "emailSent": "Email envoyé avec succès !",
         "thanks": {
-          "main": "Merci de nous avoir contacté !",
+          "main": "Merci de nous avoir contactés !",
           "sub": "Nous vous répondrons dans les plus brefs délais"
         }
       },

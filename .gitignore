@@ -142,3 +142,11 @@ public/.DS_Store
 tmp/
 .DS_Store
 
+GEO-AUDIT-REPORT.md
+geo-audit-data.json
+GEO-REPORT*.pdf
+public/rsync_all_env.sh
+sitemap.xml
+public/sitemap.xml
+
+
