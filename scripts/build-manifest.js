@@ -12,14 +12,17 @@ if (!fs.existsSync(DATA_DIR)) {
 // 1. Build Galleries Manifest
 function buildGalleriesManifest() {
   const galleriesDir = path.join(ROOT_DIR, 'public', 'galleries');
-  const manifest = {
-    galleries: [],
-    details: {}
-  };
+  const outputPath = path.join(DATA_DIR, 'galleries-manifest.json');
 
   if (!fs.existsSync(galleriesDir)) {
     console.warn('Galleries directory not found:', galleriesDir);
-    return manifest;
+    if (fs.existsSync(outputPath)) {
+      console.log('✓ Preserving existing committed galleries manifest');
+      return JSON.parse(fs.readFileSync(outputPath, 'utf-8'));
+    }
+    const emptyManifest = { galleries: [], details: {} };
+    fs.writeFileSync(outputPath, JSON.stringify(emptyManifest, null, 2), 'utf-8');
+    return emptyManifest;
   }
 
   const entries = fs.readdirSync(galleriesDir, { withFileTypes: true });
@@ -27,7 +30,15 @@ function buildGalleriesManifest() {
     .filter(dirent => dirent.isDirectory() && !dirent.name.startsWith('.'))
     .map(dirent => dirent.name);
 
-  manifest.galleries = galleryFolders;
+  if (galleryFolders.length === 0 && fs.existsSync(outputPath)) {
+    console.log('✓ Preserving existing committed galleries manifest');
+    return JSON.parse(fs.readFileSync(outputPath, 'utf-8'));
+  }
+
+  const manifest = {
+    galleries: galleryFolders,
+    details: {}
+  };
 
   const validImageExtensions = new Set(['.jpg', '.jpeg', '.png', '.webp', '.avif', '.gif']);
 
@@ -60,7 +71,6 @@ function buildGalleriesManifest() {
     };
   }
 
-  const outputPath = path.join(DATA_DIR, 'galleries-manifest.json');
   fs.writeFileSync(outputPath, JSON.stringify(manifest, null, 2), 'utf-8');
   console.log(`✓ Galleries manifest generated: ${manifest.galleries.length} galleries`);
   return manifest;
@@ -94,7 +104,7 @@ function buildTranslationsBundle() {
   return translations;
 }
 
-// 3. Precompile EJS Templates to Pure JS functions (Strict mode / ESM compliant, Zero with statements)
+// 3. Precompile EJS Templates to Pure JS functions
 const DESTRUCTURED_LOCALS = [
   't',
   'path',

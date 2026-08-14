@@ -135,18 +135,10 @@ Footer
 Footer navigation
 Terms
 
-# Static images
-public/img
-public/data
-public/galleries
-
-# SEO
-public/sitemap.xml
-seo/pages-to-index.txt
-
 # Fichiers Laurent 07-2024
 .htaccess
 .well-known/
 public/.DS_Store
 tmp/
 .DS_Store
+
