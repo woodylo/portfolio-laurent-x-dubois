@@ -57,14 +57,45 @@ function createEmailTemplate(formData) {
 }
 
 /**
- * Send contact email using HTTP fetch (Resend / Brevo API)
+ * Send contact email using HTTP fetch (SMTP2GO, Resend, or Brevo API)
  */
 async function sendContactEmail(formData, env = {}) {
   const recipientEmail = env.RECIPIENT_EMAIL || process.env.RECIPIENT_EMAIL || 'laurent.x.dubois@gmail.com';
+  const smtp2goApiKey = env.SMTP2GO_API_KEY || process.env.SMTP2GO_API_KEY;
   const resendApiKey = env.RESEND_API_KEY || process.env.RESEND_API_KEY;
   const brevoApiKey = env.BREVO_API_KEY || process.env.BREVO_API_KEY;
 
-  // 1. Resend API
+  // 1. SMTP2GO API (HTTP API)
+  if (smtp2goApiKey) {
+    const sender = env.SMTP2GO_SENDER_EMAIL || env.SENDER_EMAIL || process.env.SMTP2GO_SENDER_EMAIL || process.env.SENDER_EMAIL || 'contact@laurentxdubois.com';
+    const res = await fetch('https://api.smtp2go.com/v3/email/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        api_key: smtp2goApiKey,
+        to: [recipientEmail],
+        sender: sender,
+        subject: `📬 Nouveau contact - ${formData.name} (laurentxdubois.com)`,
+        html_body: createEmailTemplate(formData),
+        custom_headers: [
+          {
+            header: 'Reply-To',
+            value: formData.email
+          }
+        ]
+      })
+    });
+
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || (data.data && data.data.failed > 0)) {
+      throw new Error(`SMTP2GO API error: ${JSON.stringify(data)}`);
+    }
+    return { success: true };
+  }
+
+  // 2. Resend API
   if (resendApiKey) {
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -88,7 +119,7 @@ async function sendContactEmail(formData, env = {}) {
     return { success: true };
   }
 
-  // 2. Brevo API
+  // 3. Brevo API
   if (brevoApiKey) {
     const res = await fetch('https://api.brevo.com/v3/smtp/email', {
       method: 'POST',
