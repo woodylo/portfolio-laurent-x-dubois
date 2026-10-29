@@ -17,6 +17,6 @@
     "RECIPIENT_EMAIL": "laurent.x.dubois@gmail.com"
   },
   "observability": {
-    "enabled": true
+    "enabled": false
   }
 }
